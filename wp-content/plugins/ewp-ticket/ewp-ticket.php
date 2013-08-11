@@ -8,6 +8,18 @@ Author: EWP company
 Author URI: http://ecomwebpro.com
 License: GPL2
 */
+
+add_action( 'wp_enqueue_scripts', 'prefix_add_my_stylesheet' );
+
+/**
+ * Enqueue plugin style-file
+ */
+function prefix_add_my_stylesheet() {
+    // Respects SSL, Style.css is relative to the current file
+    wp_register_style( 'prefix-style', plugins_url('css/style.css', __FILE__) );
+    wp_enqueue_style( 'prefix-style' );
+}
+
 function show_ticket_selector(){
 	$string = '
 		<div class="ticket-wrapper">
