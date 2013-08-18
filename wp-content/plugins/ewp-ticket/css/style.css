@@ -18,7 +18,144 @@
 }
 .ticket-title h1 {
 	font-size: 24px;
+	background: url(../images/Plane.png) no-repeat center left;
 	text-transform: uppercase;
 	text-shadow: 0 1px 5px #000;
-	margin-bottom: 0;
+	padding-left: 50px;
+	padding-top: 0;
+}
+.ticket-content {
+	color: #FFF;
+	font-size: 14px;
+	font-weight: bold;
+	border-bottom: 1px dotted #2C83E1;
+	margin: 10px 20px;
+}
+.ticket-content .one-second {
+	width: 210px;
+	height: auto;
+	display: inline-block;
+	margin-left: 10px;
+}
+.ticket-content .start-value,.ticket-content .finish-value {
+	width: 180px;
+	background-color: #FFF;
+	color: #000;
+	padding: 5px;
+	font-weight: normal;
+	font-size: 12px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.ticket-content select {
+	height: 25px;
+	margin: 10px 0px;
+}
+.ticket-content table , .ticket-content td {
+	border: none;
+	color: #FFF;
+	width: auto;
+	text-align: left;
+	font-weight: normal;
+}
+.ticket-content table td {
+	padding: 0px 5px;
+}
+.ticket-content table .select-desc {
+	color: #CCC;
+	font-size: 12px;
+}
+.ticket-content table select {
+	width: 90px;
+}
+
+.ticket-submit button, .ticket-submit a {
+	border:1px solid #ffad41; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:12px;font-family:arial, helvetica, sans-serif; padding: 10px 10px 10px 10px; text-decoration:none; display:inline-block;text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; color: #FFFFFF;
+	background-color: #ffc579; background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc579), to(#fb9d23));
+	background-image: -webkit-linear-gradient(top, #ffc579, #fb9d23);
+	background-image: -moz-linear-gradient(top, #ffc579, #fb9d23);
+	background-image: -ms-linear-gradient(top, #ffc579, #fb9d23);
+	background-image: -o-linear-gradient(top, #ffc579, #fb9d23);
+	background-image: linear-gradient(to bottom, #ffc579, #fb9d23);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ffc579, endColorstr=#fb9d23);
+}
+
+.ticket-submit button:hover, .ticket-submit a:hover{
+	border:1px solid #ff9913;
+	background-color: #ffaf46; background-image: -webkit-gradient(linear, left top, left bottom, from(#ffaf46), to(#e78404));
+	background-image: -webkit-linear-gradient(top, #ffaf46, #e78404);
+	background-image: -moz-linear-gradient(top, #ffaf46, #e78404);
+	background-image: -ms-linear-gradient(top, #ffaf46, #e78404);
+	background-image: -o-linear-gradient(top, #ffaf46, #e78404);
+	background-image: linear-gradient(to bottom, #ffaf46, #e78404);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ffaf46, endColorstr=#e78404);
+}
+.ticket-submit button {
+	padding: 15px;
+	font-size: 24px;
+	cursor: pointer;
+	float: left;
+}
+.ticket-submit a {
+	float: right;
+	padding: 15px;
+	margin-right: 20px;
+	font-size: 24px;
+	cursor: pointer;
+}
+.ticket-popup {
+	height: 370px;
+	width: auto;
+	background-color: #FCFBBB;
+	position: absolute;
+	left: 20px;
+	display: none;
+	border-radius: 5px;
+}
+.ticket-popup .popup-title, #info-form h6 {
+	margin: 10px;
+	background-color: #F6A828;
+	color: #FFF;
+	font-size: 16px;
+	padding: 10px;
+	border-radius: 5px;
+	font-weight: bold;
+}
+.ticket-popup table, .ticket-popup table td {
+	border: none;
+	text-align: left;
+	vertical-align: top;
+}
+.ticket-popup table td + td {
+/*	border-left: 1px solid #EEE;*/
+}
+.ticket-popup td {
+	min-width: 80px;
+}
+.ticket-popup td span {
+	display: block;
+	margin: 0;
+	padding: 0;
+	
+}
+.ticket-popup td h6 {
+	margin-bottom: 0px;
+	text-transform: uppercase;
+	color: #F6A828;
+}
+.ticket-popup td a {
+	text-decoration: none;
+	color: #000;
+}
+.ticket-popup td a:hover {
+	color: #F6A828;
+}
+#info-form h6 {
+	font-size: 14px;
+}
+#info-form table , #info-form table td{
+	border: none;
+	text-align: left;
+	color: #000;
+}
+#info-form table .required {
+	color: #F00;
 }
