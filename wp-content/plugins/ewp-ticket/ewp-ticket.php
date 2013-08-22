@@ -8,6 +8,7 @@ Author: EWP company
 Author URI: http://ecomwebpro.com
 License: GPL2
 */
+require_once('ewp-ticket_admin.php');
 
 /**
  * install plugin
@@ -20,11 +21,11 @@ function ewp_install() {
     global $wpdb;
     global $ewp_db_version;
     
-    $table_name = $wpdb->prefix . "book_tiket";
+    $table_name = $wpdb->prefix . "book_ticket";
     
     $sql = "CREATE TABLE $table_name (
     	id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-        	NAME VARCHAR(100),
+        	name VARCHAR(100),
         	email VARCHAR(100),
         	phone VARCHAR(25),
         	from_city VARCHAR(100),
@@ -33,7 +34,9 @@ function ewp_install() {
         	comeback_date DATE,
         	adult_count INT(2),
         	kid_count INT(2),
-        	infant_count INT(2)
+        	infant_count INT(2),
+            booking_date DATE,
+            status VARCHAR(50)
         );";
     require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
     dbDelta( $sql );
@@ -176,7 +179,10 @@ function show_ticket_selector(){
 							<tr>
 								<td></td>
 								<td class="ticket-submit">
-									<button>Đặt vé</button>
+									<button>
+                                        <span>Đặt vé</span>
+                                        <img src="' . plugins_url('ewp-ticket/images/loading.gif') .'" style="display:none;"/>
+                                    </button>
 								</td>
 							</tr>
 						</table>
@@ -335,13 +341,17 @@ function book_ticket(){
         $result = wp_mail($to,$subject,$message);
     }
     catch(phpmailerException $e){
-        exit(0);
+        
         $exceptionmsg = $e->errorMessage();
+
+        exit('Có lỗi xảy ra, quý khách vui lòng thử lại');
     }
     if(saveBooking()) {
-        exit(1);
+
+        exit('Thông tin đã được gửi, cảm ơn qúy khách!');
     }
-    exit(0);
+
+    exit('Có lỗi xảy ra, quý khách vui lòng thử lại');
 }
 add_action( 'wp_ajax_book_ticket', 'book_ticket');
 add_action( 'wp_ajax_nopriv_book_ticket', 'book_ticket');
@@ -353,12 +363,11 @@ add_action( 'wp_ajax_nopriv_book_ticket', 'book_ticket');
 
 function saveBooking(){
     global $wpdb;
-    $table_name = $wpdb->prefix . "book_tiket";
+    $table_name = $wpdb->prefix . "book_ticket";
     $data = array();
     $fields = array(
         'name', 'email', 'phone', 'from', 'to', 'adult_count', 'kid_count', 'infant_count'
     );
-    
     foreach($fields as $field){
         if(isset($_POST[$field])) {
             $data[] = "'" . $_POST[$field] . "'";
@@ -370,10 +379,11 @@ function saveBooking(){
          $comebackDate = $_POST['comeback_date'] . '/' . $_POST['comeback_month'];
          $data[] = "'" . date('Y-m-d', strtotime($comebackDate)) . "'";
     }
+    $data[] = "'" . date('Y-m-d', time()) . "'";
+    $data[] = "'" . 'waitting' . "'";
     
-    $query = "INSERT INTO $table_name (name, email, phone, from_city, to_city, adult_count, kid_count, infant_count, go_date, comeback_date) VALUES ";
+    $query = "INSERT INTO $table_name (name, email, phone, from_city, to_city, adult_count, kid_count, infant_count, go_date, comeback_date, booking_date, status) VALUES ";
     $query .= "(" . implode(',', $data) . ")";    
-
     return $wpdb->query($query);
 }
 

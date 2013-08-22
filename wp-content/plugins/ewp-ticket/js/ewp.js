@@ -40,6 +40,9 @@ $(document).ready(function(){
 		if(!sending && checkValidate()){
 			var url = $('input#ajax-url').val();
 			sending = 1;
+            $('.ticket-submit button span').html('Đang gửi');
+            $('.ticket-submit button img').show();
+
 			$.ajax({
 				type: 'POST',
 				url: url,
@@ -60,8 +63,12 @@ $(document).ready(function(){
 				},
 				complete: function(data, textStatus, XMLHttpRequest){
 					sending = 0;
+                    alert(data.responseText.replace('\r\n', ''));
+                    $('.ticket-submit button span').html('Đặt vé');
+                    $('.ticket-submit button img').hide();
+                    $.fancybox.close();
 				}	
-			});			
+			});
 		}
 	});
 	

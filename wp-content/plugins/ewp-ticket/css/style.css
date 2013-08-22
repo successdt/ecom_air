@@ -159,3 +159,6 @@
 #info-form table .required {
 	color: #F00;
 }
+#info-form input {
+    min-width: 200px;
+}
