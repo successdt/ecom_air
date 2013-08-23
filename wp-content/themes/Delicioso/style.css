@@ -1,0 +1,33 @@
+/*
+Theme Name: Delicioso (shared on themelock.com)
+Support URI: http://www.themesaholic.com/support
+Description: Delicioso, a premium Wordpress theme by Themesaholic. Wordpress conversion by Themesaholic.
+Author: Themesaholic
+Author URI: http://www.themesaholic.com/support/
+Version: 1.2
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Theme URI: http://www.themesaholic.com/
+Tags: white, brown, green, blue, purple, red, editor-style, custom-menu
+*/
+
+
+@import url("style/404.css");
+@import url("style/blog-post.css");
+@import url("style/blog.css");
+@import url("style/buttons.css");
+@import url("style/columns.css");
+@import url("style/contact.css");
+@import url("style/gallery.css");
+@import url("style/images.css");
+@import url("style/list.css");
+@import url("style/menu-style.css");
+@import url("style/menus.css");
+@import url("style/reset.css");
+@import url("style/style.css");
+
+@import url("style/ui-lightness/jquery-ui-1.8.16.custom.css");
+
+
+
+

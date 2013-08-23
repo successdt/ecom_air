@@ -1,0 +1,357 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*----------////CONTENT\\\\-------------*/
+
+/*--- HEADLINES ---*/
+
+.h1-headlines,
+.h2-headlines,
+.h3-headlines,
+.h4-headlines,
+.h5-headlines,
+.h6-headlines{
+    float:left;
+    width: 100%;
+}
+
+
+.text-headlines{
+    color:#464646;
+    font-size:12px;
+    font-family: 'Droid Sans';
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+.title-headlines{
+    float: left;
+    width: 100%;
+}
+
+.title-headlines h1{
+    float: left;
+    width: 100%;
+    color:#b73e26;
+    font-size:22px;
+    font-family: 'Rokkitt';
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+}
+
+.title-headlines h2{
+    float: left;
+    width: 100%;
+    color:#b73e26;
+    font-size:20px;
+    font-family: 'Rokkitt';
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+}
+
+.title-headlines h3{
+    float: left;
+    width: 100%;
+    color:#b73e26;
+    font-size:18px;
+    font-family: 'Rokkitt';
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+}
+
+.title-headlines h4{
+    float: left;
+    width: 100%;
+    color:#b73e26;
+    font-size:16px;
+    font-family: 'Rokkitt';
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+}
+
+.title-headlines h5{
+    float: left;
+    width: 100%;
+    color:#b73e26;
+    font-size:14px;
+    font-family: 'Rokkitt';
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+}
+
+
+
+/*--- BUTTONS ---*/
+
+.content-buttons{
+    float:left;
+    width: 100%;
+}
+
+/*--- color ---*/
+
+.button-color{
+    float: left;
+    width: 50%;
+    margin-top: -15px;
+}
+
+
+
+/*--white-button--*/
+.white-button{
+    float: left;
+    margin: 20px 20px 0 0;
+}
+
+.white-left{
+    float: left;
+    height: 48px;
+    width: 18px;
+    background:url(../images/white-left.png) no-repeat;
+}
+
+.white-center{
+    float: left;
+    height: 32px;
+    background:url(../images/white-center.png) repeat-x;
+    color:#626060;
+    font-size:16px;
+    font-family: 'Rokkitt';
+    text-align:center;
+    padding: 16px 11px 0 11px;
+    text-transform: uppercase;
+}
+
+.white-right{
+    float: left;
+    height: 48px;
+    width: 18px;
+    background:url(../images/white-right.png) no-repeat;
+}
+
+.shortcode-buttonwhite:hover div{
+    background-position:bottom;
+}
+
+/*--blue-button--*/
+.blue-button{
+    float: left;
+    margin: 20px 20px 0 0;
+}
+
+.blue-left{
+    float: left;
+    height: 48px;
+    width: 18px;
+    background:url(../images/blue-left.png) no-repeat;
+}
+
+.blue-center{
+    float: left;
+    height: 32px;
+    background:url(../images/blue-center.png) repeat-x;
+    color:#3f7185;
+    font-size:16px;
+    font-family: 'Rokkitt';
+    text-align:center;
+    padding: 16px 11px 0 11px;
+    text-transform: uppercase;
+}
+
+.blue-right{
+    float: left;
+    height: 48px;
+    width: 18px;
+    background:url(../images/blue-right.png) no-repeat;
+}
+
+.shortcode-buttonblue:hover div{
+    background-position:bottom;
+}
+
+
+/*--red-button--*/
+.red-button{
+    float: left;
+    margin: 20px 20px 0 0;
+}
+
+.red-left{
+    float: left;
+    height: 48px;
+    width: 18px;
+    background:url(../images/red-left.png) no-repeat;
+}
+
+.red-center{
+    float: left;
+    height: 32px;
+    background:url(../images/red-center.png) repeat-x;
+    color:#873f4a;
+    font-size:16px;
+    font-family: 'Rokkitt';
+    text-align:center;
+    padding: 16px 11px 0 11px;
+    text-transform: uppercase;
+}
+
+.red-right{
+    float: left;
+    height: 48px;
+    width: 18px;
+    background:url(../images/red-right.png) no-repeat;
+}
+
+.shortcode-buttonred:hover div{
+    background-position:bottom;
+}
+
+/*--gray-button--*/
+.gray-button{
+    float: left;
+    margin: 20px 20px 0 0;
+}
+
+.gray-left{
+    float: left;
+    height: 48px;
+    width: 18px;
+    background:url(../images/gray-left.png) no-repeat center top;
+}
+
+.gray-center{
+    float: left;
+    height: 32px;
+    background:url(../images/gray-center.png) repeat-x center top;
+    color:#465057;
+    font-size:16px;
+    font-family: 'Rokkitt';
+    text-align:center;
+    padding: 16px 11px 0 11px;
+    text-transform: uppercase;
+}
+
+.gray-right{
+    float: left;
+    height: 48px;
+    width: 18px;
+    background:url(../images/gray-right.png) no-repeat center top;
+}
+
+.shortcode-buttongray:hover div{
+    background-position:bottom;
+}
+
+/*--yellow-button--*/
+.yellow-button{
+    float: left;
+    margin: 20px 20px 0 0;
+}
+
+.yellow-left{
+    float: left;
+    height: 48px;
+    width: 18px;
+    background:url(../images/yellow-left.png) no-repeat;
+}
+
+.yellow-center{
+    float: left;
+    height: 32px;
+    background:url(../images/yellow-center.png) repeat-x;
+    color:#765f2e;
+    font-size:16px;
+    font-family: 'Rokkitt';
+    text-align:center;
+    padding: 16px 11px 0 11px;
+    text-transform: uppercase;
+}
+
+.yellow-right{
+    float: left;
+    height: 48px;
+    width: 18px;
+    background:url(../images/yellow-right.png) no-repeat;
+}
+
+.shortcode-buttonyellow:hover div{
+    background-position:bottom;
+}
+
+/*--black-button--*/
+.black-button{
+    float: left;
+    margin: 20px 20px 0 0;
+}
+
+.black-left{
+    float: left;
+    height: 48px;
+    width: 18px;
+    background:url(../images/black-left.png) no-repeat;
+}
+
+.black-center{
+    float: left;
+    height: 32px;
+    background:url(../images/black-center.png) repeat-x;
+    color:#ffffff;
+    font-size:16px;
+    font-family: 'Rokkitt';
+    text-align:center;
+    padding: 16px 11px 0 11px;
+    text-transform: uppercase;
+}
+
+.black-right{
+    float: left;
+    height: 48px;
+    width: 18px;
+    background:url(../images/black-right.png) no-repeat;
+}
+
+.shortcode-buttonblack:hover div{
+    background-position:bottom;
+}
+
+/*--green-button--*/
+.green-button{
+    float: left;
+    margin: 20px 20px 0 0;
+}
+
+.green-left{
+    float: left;
+    height: 48px;
+    width: 18px;
+    background:url(../images/green-left.png) no-repeat;
+}
+
+.green-center{
+    float: left;
+    height: 32px;
+    background:url(../images/green-center.png) repeat-x;
+    color:#61723b;
+    font-size:16px;
+    font-family: 'Rokkitt';
+    text-align:center;
+    padding: 16px 11px 0 11px;
+    text-transform: uppercase;
+}
+
+.green-right{
+    float: left;
+    height: 48px;
+    width: 18px;
+    background:url(../images/green-right.png) no-repeat;
+}
+
+.shortcode-buttongreen:hover div{
+    background-position:bottom;
+}
+
+
+
+
+

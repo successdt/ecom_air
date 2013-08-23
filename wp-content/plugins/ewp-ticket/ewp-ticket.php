@@ -196,8 +196,30 @@ function show_ticket_selector(){
 	return $string;
 }
 
+function show_home_banner($atts){
+	extract(shortcode_atts(array(
+		'src' => '',
+		'alt' => '',
+		'url' => '' 
+	), $atts));
+	if($src){
+		$str = '<div class="home-banner">';
+		if($url){
+			$str .= 
+				'<a href="' . $url . '">
+					<img src="' . $src . '" alt="' . $alt . '" />
+			</a>';
+			} else {
+				$str .= '<img src="' . $src . '" alt="' . $alt .'" />';
+			}
+		$str .= '</div>';		
+	}
+	return $str;
+}
+
 function register_shortcode(){
 	add_shortcode('chon-ve', 'show_ticket_selector');
+	add_shortcode('home-banner', 'show_home_banner');
 }
 
 add_action('init', 'register_shortcode');

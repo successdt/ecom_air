@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*----------////CONTENT\\\\-------------*/
+
+
+/*--- MENU-TAPE ---*/
+
+
+.menu-tape{
+    float: left;
+    margin: 50px 0 10px;
+    position: relative;
+    width: 100%;
+}
+
+.menu-tape-left{
+    float: left;
+    width: 61px;
+    height: 78px;
+    background:url(../images/menu-tape-left.png) no-repeat;
+}
+
+.menu-tape-center{
+    float: left;
+    width: 838px;
+    background:url(../images/menu-tape-center.png) repeat-x;
+    color:#782818;
+    font-size:30px;
+    font-family: 'Rokkitt';
+    text-align:center;
+    height: 53px;
+    padding: 25px 0 0;
+    text-transform: uppercase;
+}
+
+.menu-tape-right{
+    float: left;
+    width: 61px;
+    height: 78px;
+    background:url(../images/menu-tape-right.png) no-repeat;
+}
+
+
+.menu-buttons h3{
+    color: #B73E26;
+    float: left;
+    font-family: 'Rokkitt';
+    font-size: 22px;
+    margin: 25px 0 0;
+    text-shadow: none !important;
+    text-transform: uppercase;
+}
+
+
+	#front_left_cell_loader{height:400px;float:left;width:961px;background:url(images/css/ajax-loader.gif) center 100px no-repeat;display:none;}
+
+
+.menus-loader{
+    background: url("../images/bg-body.png") repeat scroll 0 0 #FFFFFF;
+    height: 320px;
+    margin-bottom: -320px;
+    position: relative;
+    top: 46px;
+    width: 980px;
+    z-index: 1;
+    left: -2px;
+    text-align: center;
+}
+
+/*--- TEXT ---*/
+
+.menu-buttons{
+    float: left;
+    width: 100%;
+}
+
+.menu-buttons h2{
+        color: #B73E26;
+    float: left;
+    font-family: 'Rokkitt';
+    font-size: 22px;
+    margin: 25px 0 0;
+    text-shadow: none !important;
+    text-transform: uppercase;
+}
+
+.menu-buttons-all{
+    float: left;
+    margin: 20px 0 0 15px;
+    cursor: pointer;
+}
+
+.menu-buttons-left{
+    float: left;
+    width: 12px;
+    height: 32px;
+    background:url(../images/button-left-teg.png) no-repeat;
+}
+
+.menu-buttons-center{
+    float: left;
+    height: 32px;
+    background:url(../images/button-center-teg.png) repeat-x;
+    color:#464646;
+    font-size:12px;
+    font-family: 'Droid Sans';
+    text-align:center;
+    padding: 5px 2px 0 2px;
+}
+
+.menu-buttons-right{
+    float: left;
+    width: 12px;
+    height: 32px;
+    background:url(../images/button-right-teg.png) no-repeat;
+}
+
+.menu-buttons-all:hover div{
+    color:#B73E26;
+}
+
+
+

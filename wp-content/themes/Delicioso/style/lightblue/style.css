@@ -1,0 +1,38 @@
+.top-border {
+    background: url("border.jpg") repeat-x scroll left top transparent;
+}
+
+.holder-circle {
+    background: url("slider-circle.png") no-repeat scroll 0 0 transparent;
+}
+
+div.anythingSlider .anythingControls ul a {
+    background-image: url("slider-pointer.png")!important;
+}
+
+.img-post-red {
+    background: url("img-post-red.png") no-repeat scroll 0 0 transparent;
+
+}
+
+.twitter-holder {
+    background: url("twitter-holder.jpg") repeat-x scroll 0 0 transparent;
+}
+
+.twitter-dialog .bird {
+    background: url("footer_twitter.png") no-repeat scroll 0 0 transparent;
+
+}
+
+.twitter-dialog-td-p, .twitter-dialog-td-p a {
+    color: #5f8b87;
+    text-shadow: 1px 1px #9fe8e2;
+}
+
+.twitter-dialog-td-p a:hover {
+    color:#4e6f6c;
+}
+
+.blog-meta-border {
+    background: url("border.jpg") repeat-x scroll 0 0 transparent;
+}

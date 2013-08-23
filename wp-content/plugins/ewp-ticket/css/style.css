@@ -1,7 +1,7 @@
 /*style for ewp-ticket plugin*/
 .ticket-wrapper {
 	background: #104282 url(../images/search1408.jpg) repeat-x top !important;
-	height: 465px !important;
+	height: 418px !important;
 	width: 490px !important;
 	border-radius: 8px;
 	-webkit-border-radius: 8px;
@@ -161,4 +161,9 @@
 }
 #info-form input {
     min-width: 200px;
+}
+.home-banner {
+	width: 450px;
+	float: left;
+	margin-left: 20px;
 }

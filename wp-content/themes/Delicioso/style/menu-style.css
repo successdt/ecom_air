@@ -1,0 +1,77 @@
+/*--[RESET]--*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	font-family:'Droid Sans';
+	color:#464646;
+	font-size:12px;
+	text-decoration: none;
+	outline:none;
+}
+
+/*--[HEADER]--*/
+
+.header-wrapper{	
+	height: 68px; 
+	color:#fff; 
+	background-color:#000;
+	background-image: url("img/bg-pattern.png");
+	background-repeat:repeat;}
+
+
+#header{    
+	margin: 0 auto 0;
+    text-align: left;
+    width: 980px;	
+	}
+	
+.header-logo{
+	float:left;
+	width:105px;
+	position:relative;
+	top:15px;}
+	
+	
+/*--------[MENU]-----------*/
+.menu-container {
+    float: right;
+    margin-top: 20px;}
+    
+.sub-menu-top{
+ 	background: url("img/sub-menu-top.png") no-repeat transparent!important;
+    float: left!important;
+    height: 10px!important;
+    width: 159px!important;}
+    
+.sub-menu-bottom{
+ 	background: url("img/sub-menu-bottom.png") no-repeat transparent!important;
+    float: left!important;
+    height: 10px!important;
+    width: 159px!important;}
+    
+
+
+.client-login[class=client-login] a{padding: 8px 34px 0 16px !important;} 
+.client-login	a{ 
+    background-image: url("img/client-login-button.png");
+    color: #7D281C !important;
+    font-size: 11px !important;
+    font-weight: normal !important;
+    height: 21px;
+    margin: 3px 0 0 !important;
+    padding: 9px 34px 0 16px !important;
+    text-shadow: 0 1px 0 #DC7E71 !important;}
+    
+.client-login:hover a{color:#fff!important;}    

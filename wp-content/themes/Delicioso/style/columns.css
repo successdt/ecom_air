@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*----------////CONTENT\\\\-------------*/
+
+
+/*--- COLUMNS ---*/
+
+.cell_title h3{
+    float: left;
+    width: 100%;
+    color:#b73e26;
+    font-size:16px;
+    font-family: 'Rokkitt';
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.cell_text{
+    float: left;
+    color:#464646;
+    font-size:12px;
+    font-family: 'Droid Sans';
+    padding: 20px 0 0 0;
+    line-height: 20px;
+}
+
+
+.onehalf{
+    float: left;
+    width: 47%;
+    display: block;
+    margin: 0 6% 0px 0;
+}
+
+.last {
+    margin: 0 0 0px 0!important;
+}
+
+#one-columns,
+#two-columns,
+#three-columns,
+#four-columns,
+#five-columns{
+    float: left;
+    width: 100%;
+}
+
+#three-columns .one_cell{
+    float: left;
+    margin: 0 5% 0 0!important;
+    width: 30%;
+    padding: 0%;
+    height: auto!important;
+    border: 0!important;
+}
+
+#four-columns .one_cell{
+    float: left;
+    margin: 0 6% 0 0!important;
+    width: 20%;
+    padding: 0%;
+    height: auto!important;
+    border: 0!important;
+}
+
+#five-columns .one_cell{
+    float: left;
+    margin: 0 6% 0 0!important;
+    width: 15%;
+    padding: 0%;
+    height: auto!important;
+    border: 0!important;
+}

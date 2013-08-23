@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*----------////CONTENT\\\\-------------*/
+
+/*--- QUOTE-FULLWITH ---*/
+
+.text-quote-fullwith{
+    float: left;
+    width: 100%;
+}
+
+.text-quote-fullwith p{
+    float: left;
+    color:#414141;
+    font-size:20px;
+    font-family: 'Rokkitt';
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.text-quote-fullwith img{
+    float: left;
+    margin: 10px 15px 0 0;
+}
+
+
+.ullist li, .ullistol li {padding: 5px 0;}
+
+/*NUMBER-LIST*/
+.list-content{
+    float: left;
+    width: 100%;
+}
+
+.text-list{
+    float: left;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.text-list ul{clear: both;}
+
+.text-list ul li{
+    float: left;
+    margin: 0 0 14px 0;
+    width: 100%;
+}
+
+.text-list ul li h3{
+    float: left;
+    color:#b73e26;
+    font-size:12px;
+    font-family: 'Droid Sans';
+}
+
+.text-list ul li p{
+    float: left;
+    color:#464646;
+    font-size:12px;
+    font-family: 'Droid Sans';
+    margin: 1px 0 0 10px;
+}
+
+.text-list ul li img{
+    float: left;
+    margin: 4px 0 0 0;
+}
+
+.ullistol li span{
+   color: #464646;
+   font-weight: normal;
+}
+.ullistol li{
+    color: #B73E26;
+    font-weight: bold;
+}
+
+.ultype1{
+    list-style: disc inside url("img/styletype/1.png");
+}
+
+.ultype2{
+    list-style: disc inside url("img/styletype/2.png");
+}
+
+.ultype3{
+    list-style: disc inside url("img/styletype/3.png");
+}
+
+.ultype4{
+    list-style: disc inside url("img/styletype/4.png");
+}

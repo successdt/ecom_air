@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*----------////CONTENT\\\\-------------*/
+
+
+/*--- IMAGES-LEFT ---*/
+
+
+.images-content{
+    float: left;
+    width: 100%;
+    margin: 30px 0 10px 0;
+}
+
+.shortcodeimg-holder{
+    float: left;
+    border: 1px solid #e4e2d7;
+    background-color: #fff;
+}
+
+.images-border img{
+    float: left;
+    width: 451px;
+    height: 141px;
+    padding: 4px 0 0 4px;
+}
+
+.images-left-text{
+    float: left;
+    margin: -27px 0 0 40px;
+    width: 450px;
+}
+
+.images-wriper h2{
+    float: left;
+    color:#b73e26;
+    font-size:16px;
+    font-family: 'Rokkitt';
+    text-transform: uppercase;
+}
+
+.images-wriper p{
+    float: left;
+    color:#464646;
+    font-size:12px;
+    font-family: 'Droid Sans';
+    line-height: 20px;
+}
+
+
+
+/*--- IMAGES-RIGHT ---*/
+
+.images-right-text{
+    float: left;
+    margin: -27px 40px 0 0;
+    width: 450px;
+}
+
+
+/*--- IMAGES-RIGHT ---*/
+
+
+.tabbet-content{
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+}
+

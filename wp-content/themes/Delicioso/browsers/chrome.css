@@ -1,0 +1,11 @@
+div.anythingControls ul.thumbNav li.anythingControls-left, div.anythingControls ul.thumbNav li.anythingControls-right {
+top: 15px!important;
+}
+
+.sidebar_widget_holder .search-center input{
+        width: 170px!important;
+        outline: none!important;
+        padding: 7px 0 0 0!important;
+}
+
+.footer_widget_holder #today a{color:#414141;}

@@ -1,0 +1,344 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*----------////CONTENT\\\\-------------*/
+
+/*--- CONTENT - LEFT ---*/
+
+
+.title-blog{
+    float: left;
+    width: 96%;
+}
+
+.title-blog a{
+    float: left;
+    width: 100%;
+    color:#b73e26;
+    font-size:20px;
+    font-family: 'Rokkitt';
+    margin: 0 0 30px 0;
+    text-transform: uppercase;
+}
+
+.title-blog a:hover{
+    color: #464646;
+}
+
+/*--- IMAGES ---*/
+
+.images{
+    float: left;
+    width: 690px;
+    height: 250px;
+    border: 1px solid #e4e2d7;
+    background-color: #fff;
+}
+
+.images img{
+    margin: 5px 0 0 5px;
+    width: 680px;
+    height: 193px;
+}
+
+.images a{
+    float: left;
+    width: 690px;
+    height: 203px;
+    background:url(../images/hover-img-blog.png) no-repeat;
+}
+
+/*--- POST ---*/
+
+.post h3{
+        text-transform: none;
+
+}
+.post{
+    float: left;
+    width: 96%;
+    margin-top: 15px;
+}
+
+.post a:hover{color:#B73E26;}
+
+.post h3 a{
+    color:#3d3d37;
+    font-size:14px;
+    font-family: 'Rokkitt';
+}
+.post h3{
+    float: left;
+    color:#3d3d37;
+    font-size:14px;
+    font-family: 'Rokkitt';
+    padding: 15px 0 15px 0;
+}
+
+.post img{
+    float: left;
+    width: 659px;
+    height: 3px;
+}
+
+
+/*--- TEXT ---*/
+
+.text{
+    float: left;
+    width: 96%;
+}
+
+.text p{
+    float: left;
+    color:#464646;
+    font-size:12px;
+    font-family: 'Droid Sans';
+    margin: 15px 0 0 0;
+    line-height: 20px;
+}
+
+
+/*--- RIDING ---*/
+
+.riding{
+    float: left;
+    width: 96%;
+    margin: 25px 0 50px 0;
+}
+
+.riding a{
+    float: left;
+    color:#464646;
+    font-size:13px;
+    font-family: 'Rokkitt';
+    text-transform: uppercase;
+}
+
+.riding a:hover{
+    color: #b73e26;
+}
+
+
+.riding img{
+    float: left;
+    width: 10px;
+    height: 9px;
+    margin: 5px 8px 0 0;
+}
+
+
+/*--- PAGINATION ---*/
+
+.pagination{
+    float: left;
+    margin: 30px 0 0 0;
+}
+
+.pagination-left{
+    display:block;
+    float: left;
+    height: 32px;
+    width: 12px;
+    background:url(../images/pagination-left.png) no-repeat;
+}
+
+.pagination-center-t{
+    display:block;
+    float: left;
+    height: 24px;
+    background:url(../images/pagination-center.png) repeat-x;
+    color:#464646;
+    font-size:12px;
+    font-family: 'Droid Sans';
+    text-align:center;
+    padding: 8px 7px 0 7px;
+    line-height: 16px;
+}
+
+.prev-img{
+    float: left;
+    width: 14px;
+    height: 5px;
+    margin-top: 5px;
+    background:url(../images/arrow-left.png) no-repeat;
+}
+
+
+.next-img{
+    float: left;
+    width: 14px;
+    height: 5px;
+    margin-top: 5px;
+    background:url(../images/arrow-right.png) no-repeat;
+}
+
+.next-img:hover,
+.prev-img:hover{
+    background-position:bottom;
+}
+
+.pagination-center-n{
+    display:block;
+    float: left;
+    height: 24px;
+    background:url(../images/pagination-center.png) repeat-x;
+    color:#464646;
+    font-size:12px;
+    font-family: 'Droid Sans';
+    text-align:center;
+    padding: 8px 1px 0 1px;
+    line-height: 16px;
+}
+
+.pagination-right{
+    display:block;
+    float: left;
+    height: 32px;
+    width: 12px;
+
+    background:url(../images/pagination-right.png) no-repeat;
+}
+
+.pagination a, .pagination .active{
+        margin: 0 12px 0 0;
+        display: inline-block;
+        float: none;
+}
+
+.pagination-first,
+.pagination-prev,
+.pagination-1,
+.pagination-2,
+.pagination-3,
+.pagination-next,
+.pagination-last{
+    float: left;
+}
+
+.pagination-first:hover div,
+.pagination-prev:hover div,
+.pagination-1:hover div,
+.pagination-2:hover div,
+.pagination-3:hover div,
+.pagination-next:hover div,
+.pagination-last:hover div{
+    background-position:bottom;
+    color:#B73E26;
+}
+
+.three-point{
+    float: left;
+    margin: 0 12px 0 0;
+}
+
+.three-point p{
+    float: left;
+    color:#464646;
+    font-size:12px;
+    font-family: 'Droid Sans';
+    margin-top: 5px;
+}
+
+/*----BLOG META----*/
+
+.no-img-border{
+    margin: 0 0!important;
+    width: 693px!important;
+}
+
+.no-img-bg .written-content a, .no-img-bg .cat-content a, .no-img-bg .comm-content a{float: left;}
+
+.no-img-bg{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E4E2D7;
+    height: 35px;
+    margin: 0;
+    padding: 10px 0 0;
+}
+
+.blog-written{display: inline-block;    margin-left: 8px;}
+.blog-date{display: inline-block;    margin-left: 8px;}
+.blog-cat{display: inline-block;    margin-left: 6px;}
+.blog-comm{display: inline-block;    margin-left: 8px;}
+
+.blog-meta-border{
+    background: url("../images/blog-meta-border.png") repeat-x scroll 0 0 transparent;
+    display: inline-block;
+    height: 5px;
+    margin: -5px 5px 0;
+    width: 680px;
+}
+
+.icon-written{
+    background: url(../images/icon-written.png) no-repeat scroll 0px 1px transparent;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 0 7px 0 10px;
+    
+}
+
+.written-content{ display: inline-block}
+.written-content a{
+    display: inline-block;
+    width: auto;
+    background: none;
+    height: auto;
+    font-family: 'Rokkitt';
+    font-size: 14px;
+}
+
+.icon-date{
+    background: url(../images/icon-date.png) no-repeat scroll 0px 1px transparent;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 0 7px 0 10px;
+    float: left;
+}
+
+.date-content{ display: inline-block;
+    width: auto;
+    background: none;
+    height: auto;
+    float: left;
+    font-family: 'Rokkitt';
+    font-size: 14px;
+}
+
+.icon-cat{
+    background: url(../images/icon-cat.png) no-repeat scroll 0px 3px transparent;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 0 0 0 10px;
+}
+
+.cat-content{ display: inline-block}
+.cat-content a{
+    display: inline-block;
+    width: auto;
+    background: none;
+    height: auto;
+    font-family: 'Rokkitt';
+    font-size: 14px;
+}
+
+.icon-comm{
+    background: url(../images/icon-comm.png) no-repeat scroll 0px 3px transparent;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 0 7px 0 10px;
+}
+
+.comm-content{ display: inline-block}
+.comm-content a{
+    display: inline-block;
+    width: auto;
+    background: none;
+    height: auto;
+    font-family: 'Rokkitt';
+    font-size: 14px;
+}
