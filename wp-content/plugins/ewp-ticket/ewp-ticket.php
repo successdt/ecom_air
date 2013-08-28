@@ -262,11 +262,12 @@ function booking_hint($atts, $content = null){
 function promo_news(){
 	$str = 
 		'<div class="promo-news home-cell">
-			<h5>Tin khuyến mại</h5>
-			<p>';
+			<h5>Tin khuyến mại</h5>';
+	if(function_exists('get_vsrp')){
+		$str .= get_vsrp();
+	}
 	$str .= 
-			'</p>
-		</div>';
+		'</div>';
 	return $str;	
 }
 function home_address($atts, $content = null){
@@ -498,6 +499,8 @@ function saveBooking(){
     $query .= "(" . implode(',', $data) . ")";    
     return $wpdb->query($query);
 }
+
+
 
 /*********Amin area*******/
 

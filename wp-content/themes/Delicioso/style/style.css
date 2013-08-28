@@ -1840,3 +1840,27 @@ span.break {
 	z-index: 2;
 	position: relative;
 }
+#vsrp_Holder {
+	margin: 20px !important;
+}
+#vsrp_Holder a {
+	color: #FFF;
+}
+.vsrp_div {
+
+}
+.vsrp_div div, .vsrp_div span {
+
+}
+.vsrp_div .image {
+	width: 15%;
+	float: left;
+}
+.vsrp_div .title {
+	width: 85%;
+	float: left;
+	
+}
+.vsrp_div img {
+	margin-top: 5px;
+}

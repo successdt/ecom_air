@@ -9,7 +9,6 @@
         html += '<ul class="slider">';
         $(this).find('li').each(function(){
             i++;
-            console.log($(this).html());
             html += '<li id="slide-' + i + '">' + $(this).html() + '</li>';
         });
         html += '</ul>';
