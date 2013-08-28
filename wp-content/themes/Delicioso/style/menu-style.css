@@ -74,3 +74,10 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     text-shadow: 0 1px 0 #DC7E71 !important;}
     
 .client-login:hover a{color:#fff!important;}    
+
+/**Edited by ewp*/
+.sf-menu a {
+	color: #000 !important;
+	font-size: 17px !important;
+	padding: 0.2em 1em !important;
+}
