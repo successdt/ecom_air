@@ -1827,6 +1827,9 @@ span.break {
 }
 
 /*edited by EWP*/
+.post-home {
+	margin: 120px 0 0 0;
+}
 #slider-wrap-front {
     overflow: hidden;
     
@@ -1863,4 +1866,14 @@ span.break {
 }
 .vsrp_div img {
 	margin-top: 5px;
+}
+.slide-holder {
+	overflow: hidden;
+}
+div.anythingSlider .anythingControls ul{
+	text-align: right !important;
+}
+div.anythingControls ul.thumbNav li.anythingControls-right {
+	background: url("../images/border-nav-center.png") repeat-x !important;
+	width: 30px !important;
 }
