@@ -217,9 +217,99 @@ function show_home_banner($atts){
 	return $str;
 }
 
+function show_hotline($atts){
+	extract(shortcode_atts(array(
+		'hotline1' => '',
+		'hotline2' => ''
+	), $atts));
+	$str = 
+		'<div class="info-hotline home-block">
+			<div id="info-reg">
+				<div class="title">
+					Đăng ký nhận bản tin khuyến mãi
+				</div>
+				<div class="form">
+					<input name="email" class="email" />
+					<button class="btn-blue">Đăng ký</button>
+				</div>
+			</div>
+			<div class="hotline">
+				<div class="col">
+					<img src="' . get_bloginfo('url') . '/wp-content/uploads/2013/08/hotline1.png" />
+				</div>
+				<div class="col">
+			';
+	if($hotline1){
+		$str .= '<span class="hotline-number">' . $hotline1 . '</span>';
+	}
+	if($hotline2){
+		$str .= '<span class="hotline-number">' . $hotline2 . '</span>';
+	}
+	$str .= '
+				</div>
+			</div>
+		</div>';
+	return $str;
+}
+function booking_hint($atts, $content = null){
+	$str = 
+		'<div class="booking-hint home-cell">
+			<h5>Hướng dẫn đặt vé</h5>
+			<div class="text">' . $content . '</div>
+		</div>';
+	return $str;
+}
+function promo_news(){
+	$str = 
+		'<div class="promo-news home-cell">
+			<h5>Tin khuyến mại</h5>
+			<p>';
+	$str .= 
+			'</p>
+		</div>';
+	return $str;	
+}
+function home_address($atts, $content = null){
+	extract(shortcode_atts(array(
+		'latitude' => '',
+		'longitude' => ''
+	), $atts));
+	$str = 
+		'<div class="home-cell home-address">
+		';	
+	if($content){
+		$str .= '<div class="text">' . $content . '</div>';
+	}
+	if($latitude && $longitude){
+		$str .= '<input type="hidden" id="lat" value="' . $latitude . '">';
+		$str .= '<input type="hidden" id="lat" value="' . $longitude . '">';
+		$str .= 
+			'<div class="map">
+				<iframe width="272" height="272" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=vi&amp;geocode=&amp;q=21.0301444,105.7845998&amp;aq=&amp;sll=15.984434,108.273697&amp;sspn=0.215192,0.407181&amp;ie=UTF8&amp;t=m&amp;ll=21.030113,105.784607&amp;spn=0.021791,0.02326&amp;z=14&amp;output=embed"></iframe>
+			</div>';
+	}
+	$str .= '</div>';
+	return $str;
+}
+function facebook_page($atts){
+	extract(shortcode_atts(array(
+		'url' => ''
+	), $atts));
+	$str .= '<div class="facebook-page home-cell">';
+	if($url){
+		$str .= '<iframe src="' . $url . '" scrolling="no" frameborder="0" style="border: none; overflow: hidden; width: 450px; height: 275px;" allowtransparency="true"></iframe>';	
+	}
+	$str .= '</div>';
+	return $str;
+}
 function register_shortcode(){
 	add_shortcode('chon-ve', 'show_ticket_selector');
 	add_shortcode('home-banner', 'show_home_banner');
+	add_shortcode('hotline', 'show_hotline');
+	add_shortcode('booking-hint', 'booking_hint');
+	add_shortcode('promo-news', 'promo_news');
+	add_shortcode('home-address', 'home_address');
+	add_shortcode('facebook-page', 'facebook_page');
 }
 
 add_action('init', 'register_shortcode');

@@ -2,7 +2,7 @@
 .ticket-wrapper {
 	background: #104282 url(../images/search1408.jpg) repeat-x top !important;
 	height: 418px !important;
-	width: 490px !important;
+	width: 470px !important;
 	border-radius: 8px;
 	-webkit-border-radius: 8px;
 	position: relative;
@@ -32,7 +32,7 @@
 	margin: 10px 20px;
 }
 .ticket-content .one-second {
-	width: 210px;
+	width: 200px;
 	height: auto;
 	display: inline-block;
 	margin-left: 10px;
@@ -69,7 +69,7 @@
 	width: 90px;
 }
 
-.ticket-submit button, .ticket-submit a {
+.ticket-submit button, .ticket-submit a, #info-reg button  {
 	border:1px solid #ffad41; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:12px;font-family:arial, helvetica, sans-serif; padding: 10px 10px 10px 10px; text-decoration:none; display:inline-block;text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; color: #FFFFFF;
 	background-color: #ffc579; background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc579), to(#fb9d23));
 	background-image: -webkit-linear-gradient(top, #ffc579, #fb9d23);
@@ -163,7 +163,149 @@
     min-width: 200px;
 }
 .home-banner {
-	width: 450px;
+	width: 470px;
 	float: left;
+	height: 418px;
 	margin-left: 20px;
+	background: #104282 url(../images/search1408.jpg) repeat-x top !important;
+	padding-bottom: 8px;
+	border-radius: 8px;
+	
+}
+.home-banner img{
+	width: 430px;
+	margin: 20px;
+	height: 390px;
+}
+
+.home-block {
+	width: 960px;
+	float: left;
+	margin-top: 20px;
+	background: #104282 url(../images/search1408.jpg) repeat-x top !important;
+	border-radius: 8px;
+}
+.info-hotline {
+	margin-top: 60px;
+}
+#info-reg {
+	width: 320px;
+	float: left;
+	margin: 20px;
+}
+#info-reg .title {
+	color: #FFF;
+	font-weight: bold;
+	font-size: 16px;
+}
+#info-reg .form {
+	margin-top: 10px;
+}
+#info-reg input {
+	width: 225px;
+	height: 38px;
+	border-radius: 5px 0 0 5px;
+	border: none;
+	font-size: 13px;
+}
+
+.hotline .col {
+	width: 250px;
+	float: left;
+	margin: 20px;
+	text-align: center;
+}
+.hotline-number {
+	display: block;
+	font-size: 28px;
+	color: #FFF;
+	margin-top: 15px;
+	font-weight: bold;
+
+}
+.home-cell {
+	width: 450px;
+	height: 300px;
+	float: left;
+	margin-top: 20px;
+	background: #104282;
+	color: #FFF;
+	border: 10px solid #FFF;
+}
+.home-cell p {
+	color: #FFF;
+	margin: 20px;
+}
+.promo-news, .facebook-page {
+	margin-left: 20px;
+}
+.facebook-page, .home-address{
+	height: 272px;
+}
+.facebook-page {
+	background-color: #FFF;
+}
+.home-cell h5 {
+	margin: 10px;
+	color: #FFF;
+	font-size: 24px;
+}
+.booking-hint .text {
+	margin: 0 10px;
+}
+#next, #prev {
+	display:none
+}
+.carousel{
+	color: #FFF;
+	text-decoration: none;
+	border-radius: 5px 0 0 5px;	
+	float: left;
+	padding: 15px;
+	font-size: 16px;
+}
+.carousel-wrapper {
+	background-image: -ms-linear-gradient(bottom right, #1A97BD 0%, #2191D1 100%);
+	
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(bottom right, #1A97BD 0%, #2191D1 100%);
+	
+	/* Opera */ 
+	background-image: -o-linear-gradient(bottom right, #1A97BD 0%, #2191D1 100%);
+	
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #1A97BD), color-stop(1, #2191D1));
+	
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(bottom right, #1A97BD 0%, #2191D1 100%);
+	
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to top left, #1A97BD 0%, #2191D1 100%);
+	
+	border: 1px solid #1A97BD;
+	overflow: hidden;
+	height: 50px;
+	width: 960px;
+	margin-top: 20px;
+	float: left;
+}
+.carousel-wrapper table {
+	position: relative;
+	float: left !important;
+	width: 750px;
+	
+}
+.carousel-wrapper table td {
+	padding: 0;
+}
+.carousel-wrapper img {
+	height: 50px;
+}
+.home-address .text {
+	width: 168px;
+	margin: 0px 5px;
+	color: #FFF;
+}
+.home-address strong {
+	color: #FFF;
 }

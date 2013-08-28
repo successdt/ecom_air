@@ -20,7 +20,7 @@
 
 h1{
     color: #B73E26;
-    font-family: 'Rokkitt';
+    font-family: "Times New Roman", Times, serif;
     font-size: 22px;
     margin: 0 0 5px;
     text-transform: uppercase;
@@ -28,7 +28,7 @@ h1{
 
 h2{
     color: #B73E26;
-    font-family: 'Rokkitt';
+    font-family: "Times New Roman", Times, serif;
     font-size: 20px;
     margin: 0 0 5px;
     text-transform: uppercase;
@@ -36,7 +36,7 @@ h2{
 
 h3{
     color: #B73E26;
-    font-family: 'Rokkitt';
+    font-family: "Times New Roman", Times, serif;
     font-size: 18px;
     margin: 0 0 5px;
     text-transform: uppercase;
@@ -44,7 +44,7 @@ h3{
 
 h4{
     color: #B73E26;
-    font-family: 'Rokkitt';
+    font-family: "Times New Roman", Times, serif;
     font-size: 16px;
     margin: 0 0 5px;
     text-transform: uppercase;
@@ -52,7 +52,7 @@ h4{
 
 h5{
     color: #B73E26;
-    font-family: 'Rokkitt';
+    font-family: "Times New Roman", Times, serif;
     font-size: 14px;
     margin: 0 0 5px;
     text-transform: uppercase;
@@ -66,7 +66,7 @@ body{
 	background:url(../images/bg-body.png) repeat;
         overflow-x: hidden;
         color: #464646;
-        font-family: 'Droid Sans';
+        font-family: "Times New Roman", Times, serif;
         font-size: 12px;
         line-height: 20px;
 }
@@ -117,7 +117,7 @@ body{
     color:#464646;
     padding:3px 10px;
     font-size:17px;
-    font-family: 'Rokkitt';
+    font-family: "Times New Roman", Times, serif;
 }
 
 .nav ul li a:hover, 
@@ -216,7 +216,7 @@ body{
 
 .holder-circle h1{
     color: #FFFFFF;
-    font-family: 'Rokkitt';
+    font-family: "Times New Roman", Times, serif;
     font-size: 48px;
     margin: 0 auto;
     overflow: hidden;
@@ -241,7 +241,7 @@ body{
     padding: 13px 0 0 20px;
     color: #b73e26;
     font-size:25px;
-    font-family: 'Rokkitt';
+    font-family: "Times New Roman", Times, serif;
     text-transform: uppercase;
 }
 
@@ -259,7 +259,7 @@ body{
     padding: 20px 0 0 20px;
     color: #464646;
     font-size:12px;
-    font-family: 'Droid Sans';
+    font-family: "Times New Roman", Times, serif;
     line-height: 20px;
     
 }
@@ -494,7 +494,7 @@ body{
     width: 100%;
     color:#b73e26;
     font-size:16px;
-    font-family: 'Rokkitt';
+    font-family: "Times New Roman", Times, serif;
     margin: 23px 0 0 0;
     text-transform: uppercase;
 }
@@ -504,7 +504,7 @@ body{
     width: 100%;
     color:#464646;
     font-size:12px;
-    font-family: 'Droid Sans';
+    font-family: "Times New Roman", Times, serif;
     margin: 12px 0 0 0;
     line-height: 20px;
 }
@@ -532,7 +532,7 @@ body{
 .img-post-red p{
     color: #FFFFFF;
     float: left;
-    font-family: 'Rokkitt';
+    font-family: "Times New Roman", Times, serif;
     font-size: 22px;
     margin: 26px 0 0 5px;
     overflow: hidden;
@@ -558,7 +558,7 @@ body{
 .featured-box-text p{
     color: #414141;
     float: left;
-    font-family: 'Rokkitt';
+    font-family: "Times New Roman", Times, serif;
     font-size: 22px;
     height: 42px;
     margin: 21px 0 0 21px;
@@ -587,7 +587,7 @@ body{
     background:url(../images/featured-box-center.png) repeat-x;
     color:#b73e26;
     font-size:18px;
-    font-family: 'Rokkitt';
+    font-family: "Times New Roman", Times, serif;
     text-align:center;
     padding: 15px 0 0 0;
     text-transform: uppercase;
@@ -612,7 +612,7 @@ body{
 .quote{
     color: #414141;
     float: left;
-    font-family: 'Rokkitt';
+    font-family: "Times New Roman", Times, serif;
     font-size: 20px;
     line-height: 30px;
     margin-top: 10px;
@@ -648,7 +648,7 @@ body{
     float: left;
     color:#414141;
     font-size:20px;
-    font-family: 'Rokkitt';
+    font-family: "Times New Roman", Times, serif;
     line-height: 30px;
     text-transform: uppercase;
     margin-top: 10px;
@@ -663,7 +663,7 @@ body{
     float: left;
     color:#464646;
     font-size:12px;
-    font-family: 'Droid Sans';
+    font-family: "Times New Roman", Times, serif;
     line-height: 20px;
 }
 
@@ -711,7 +711,7 @@ body{
 .twitter-dialog-td-p {
     color: #82392B;
     display: table-cell;
-    font-family: 'Rokkitt';
+    font-family: "Times New Roman", Times, serif;
     font-size: 24px;
     height: 80px;
     line-height: 24px;
@@ -804,7 +804,7 @@ body{
     width: 100%;
     color:#414141;
     font-size:18px;
-    font-family: 'Rokkitt';
+    font-family: "Times New Roman", Times, serif;
     margin: 35px 0 20px;
     text-transform: uppercase;
 }
@@ -818,7 +818,7 @@ body{
     width: 100%;
     color:#414141;
     font-size:12px;
-    font-family: 'Droid Sans';
+    font-family: "Times New Roman", Times, serif;
     line-height: 20px;
 }
 
@@ -851,7 +851,7 @@ body{
     width: 179px;
     color:#464646;
     font-size:13px;
-    font-family: 'Droid Sans';
+    font-family: "Times New Roman", Times, serif;
     margin: 15px 0 0 16px;
 }
 
@@ -860,7 +860,7 @@ body{
     width: 179px;
     color:#464646;
     font-size:13px;
-    font-family: 'Droid Sans';
+    font-family: "Times New Roman", Times, serif;
     margin: 0 0 0 16px;
     background: none !important;
 }
@@ -875,7 +875,7 @@ body{
     float: left;
     color:#414141;
     font-size:12px;
-    font-family: 'Rokkitt';
+    font-family: "Times New Roman", Times, serif;
     margin-left: 9px;
 }
 
@@ -901,7 +901,7 @@ body{
     float: left;
     color:#414141;
     font-size:12px;
-    font-family: 'Droid Sans';
+    font-family: "Times New Roman", Times, serif;
     line-height: 34px;
     background: url(../images/border-footer.png) repeat-x;
     background-position: bottom;
@@ -959,7 +959,7 @@ body{
     width: 100%;
     color:#414141;
     font-size:12px;
-    font-family: 'Droid Sans';
+    font-family: "Times New Roman", Times, serif;
     line-height: 16px;
 }
 
@@ -972,7 +972,7 @@ body{
     width: 100%;
     color:#414141;
     font-size:12px;
-    font-family: 'Rokkitt';
+    font-family: "Times New Roman", Times, serif;
     margin: 2px 0 0 0;
 }
 
@@ -991,7 +991,7 @@ body{
     float: left;
     color:#414141;
     font-size:11px;
-    font-family: 'Droid Sans';
+    font-family: "Times New Roman", Times, serif;
     margin: 17px 0 0 0;
 }
 
@@ -999,7 +999,7 @@ body{
     float: left;
     color:#414141;
     font-size:11px;
-    font-family: 'Droid Sans';
+    font-family: "Times New Roman", Times, serif;
     margin: 17px 0 0 5px;
 }
 
@@ -1007,7 +1007,7 @@ body{
     float: left;
     color:#414141;
     font-size:11px;
-    font-family: 'Droid Sans';
+    font-family: "Times New Roman", Times, serif;
     margin: 17px 0 0 4px;
 }
 
@@ -1052,7 +1052,7 @@ body{
 .titles .cell_title h2, .top-content-title .wrap h2{
     color: #B73E26;
     float: left;
-    font-family: 'Rokkitt';
+    font-family: "Times New Roman", Times, serif;
     font-size: 16px;
     margin-top: 30px;
     text-transform: uppercase;
@@ -1105,7 +1105,7 @@ body{
 .search-center input{
     margin: 5px 0 0 0;
     color: #434243;
-    font-family: 'Droid Sans';
+    font-family: "Times New Roman", Times, serif;
     font-size: 12px;
     background-color: transparent;
     border: none;
@@ -1135,7 +1135,7 @@ body{
     float: left;
     color:#b73e26;
     font-size:22px;
-    font-family: 'Rokkitt';
+    font-family: "Times New Roman", Times, serif;
     margin: 25px 0 0 0;
     text-transform: uppercase;
     text-shadow: none !important;
@@ -1182,7 +1182,7 @@ body{
 .sidebar_widgettitle{
         color: #B73E26;
     float: left;
-    font-family: 'Rokkitt';
+    font-family: "Times New Roman", Times, serif;
     font-size: 18px;
     margin: 0 0 20px;
     text-transform: uppercase;
@@ -1195,7 +1195,7 @@ body{
     width: 100%;
     color:#b73e26;
     font-size:18px;
-    font-family: 'Rokkitt';
+    font-family: "Times New Roman", Times, serif;
     margin: 0 0 20px 0;
     text-transform: uppercase;
 }
@@ -1254,7 +1254,7 @@ body{
     width: 100%;
     color:#464646;
     font-size:12px;
-    font-family: 'Droid Sans';
+    font-family: "Times New Roman", Times, serif;
 }
 
 .sidebar_widget_holder .app_recent_title a:hover{
@@ -1266,7 +1266,7 @@ body{
     width: 100%;
     color:#b73e26;
     font-size:12px;
-    font-family: 'Rokkitt';
+    font-family: "Times New Roman", Times, serif;
     margin: 2px 0 0 0;
 }
 
@@ -1292,7 +1292,7 @@ body{
 .sidebar_widget_holder ul li a{
     color: #464646;
     float: left;
-    font-family: 'Droid Sans';
+    font-family: "Times New Roman", Times, serif;
     font-size: 12px;
     line-height: 34px;
     padding-top: 1px;
@@ -1337,7 +1337,7 @@ body{
     width: 179px!important;
     color:#464646;
     font-size:13px;
-    font-family: 'Droid Sans';
+    font-family: "Times New Roman", Times, serif;
     line-height: 20px!important;
    padding-bottom: 15px;
 }
@@ -1348,7 +1348,7 @@ body{
     width: 100%!important;
     color:#464646!important;
     font-size:13px!important;
-    font-family: 'Droid Sans';
+    font-family: "Times New Roman", Times, serif;
     background: none !important;
     line-height: 20px!important;
 }
@@ -1362,7 +1362,7 @@ body{
     float: left;
     color:#414141;
     font-size:12px;
-    font-family: 'Rokkitt';
+    font-family: "Times New Roman", Times, serif;
     margin: 9px 0 12px 9px;
 }
 
@@ -1392,7 +1392,7 @@ body{
     width: 100%;
     color:#464646;
     font-size:12px;
-    font-family: 'Droid Sans';
+    font-family: "Times New Roman", Times, serif;
     line-height: 20px;
 }
 
@@ -1423,7 +1423,7 @@ body{
     background:url(../images/button-center-teg.png) repeat-x;
     color:#464646;
     font-size:12px;
-    font-family: 'Droid Sans';
+    font-family: "Times New Roman", Times, serif;
     text-align:center;
     padding: 8px 2px 0 2px;
 }
@@ -1463,7 +1463,7 @@ body{
 thead{
     color:#a33614;
     font-size:14px;
-    font-family: 'Rokkitt';
+    font-family: "Times New Roman", Times, serif;
     width: 206px;
     border-bottom: 1px solid #DBD9CC;
 }
@@ -1471,7 +1471,7 @@ thead{
 tbody{
     color:#464646;
     font-size:12px;
-    font-family: 'Droid Sans';
+    font-family: "Times New Roman", Times, serif;
 }
 
 tbody a{
@@ -1483,13 +1483,13 @@ tbody a{
     background-color: #fff;
     color:#a33614;
     font-size:12px;
-    font-family: 'Droid Sans';
+    font-family: "Times New Roman", Times, serif;
 }
 
 #wp-calendar caption{
     color:#b73e26;
     font-size:14px;
-    font-family: 'Rokkitt';
+    font-family: "Times New Roman", Times, serif;
     margin-bottom: 10px;
     margin-right: 115px;
 }
@@ -1497,7 +1497,7 @@ tbody a{
 tfoot a{
     color:#464646;
     font-size:12px;
-    font-family: 'Rokkitt';
+    font-family: "Times New Roman", Times, serif;
     margin-bottom: 10px;
 }
 
@@ -1542,7 +1542,7 @@ tfoot a:hover{
     background:url(../images/button-center-teg-footer.png) repeat-x;
     color:#464646;
     font-size:12px;
-    font-family: 'Droid Sans';
+    font-family: "Times New Roman", Times, serif;
     text-align:center;
     padding: 8px 2px 0 2px;
 }
@@ -1565,7 +1565,7 @@ tfoot a:hover{
 .footer_widget_holder  #recentcomments .recentcomments{
     color: #FFFFFF;
     float: left;
-    font-family: 'Rokkitt' !important;
+    font-family: "Times New Roman", Times, serif !important;
     font-size: 14px;
     margin-right: 5px;
     text-decoration: none;
@@ -1578,7 +1578,7 @@ tfoot a:hover{
 .footer_widget_holder  #recentcomments .recentcomments a{
     color: #414141!important;
     float: left!important;
-    font-family: 'Rokkitt' !important;
+    font-family: "Times New Roman", Times, serif !important;
     font-size: 14px!important;
     margin-right: 5px!important;
     text-decoration: none!important;
@@ -1592,7 +1592,7 @@ tfoot a:hover{
 .footer_widget_holder  #recentcomments .recentcomments .url{
     color: #FFFFFF!important;
     float: left!important;
-    font-family: 'Rokkitt' !important;
+    font-family: "Times New Roman", Times, serif !important;
     font-size: 14px!important;
     margin-right: 5px!important;
     text-decoration: none!important;
@@ -1607,7 +1607,7 @@ tfoot a:hover{
 .sidebar_widget_holder  #recentcomments .recentcomments{
     color: #B73E26;
     float: left;
-    font-family: 'Rokkitt' !important;
+    font-family: "Times New Roman", Times, serif !important;
     font-size: 14px;
     margin-right: 5px;
     text-decoration: none;
@@ -1619,7 +1619,7 @@ tfoot a:hover{
 .sidebar_widget_holder  #recentcomments .recentcomments a{
     color: #414141!important;
     float: left!important;
-    font-family: 'Rokkitt' !important;
+    font-family: "Times New Roman", Times, serif !important;
     font-size: 14px!important;
     margin-right: 5px!important;
     text-decoration: none!important;
@@ -1633,7 +1633,7 @@ tfoot a:hover{
 .sidebar_widget_holder  #recentcomments .recentcomments .url{
     color: #B73E26!important;
     float: left!important;
-    font-family: 'Rokkitt' !important;
+    font-family: "Times New Roman", Times, serif !important;
     font-size: 14px!important;
     margin-right: 5px!important;
     text-decoration: none!important;
@@ -1652,7 +1652,7 @@ tfoot a:hover{
     float: left;
     color:#fff;
     font-size:14px;
-    font-family: 'Rokkitt'!important;
+    font-family: "Times New Roman", Times, serif!important;
     text-decoration: none;
     width: auto!important;
     margin-right: 5px;
@@ -1666,7 +1666,7 @@ tfoot a:hover{
 .recentcomments a{
     float: left!important;
     color:#464646!important;
-    font-family: 'Rokkitt'!important;
+    font-family: "Times New Roman", Times, serif!important;
     font-size:12px!important;
     line-height: 20px!important;
     width: auto!important;
@@ -1698,7 +1698,7 @@ tfoot a:hover{
     background:url(../images/button-center-teg.png) repeat-x;
     color:#464646;
     font-size:12px;
-    font-family: 'Droid Sans';
+    font-family: "Times New Roman", Times, serif;
     text-align:center;
     padding: 6px 2px 2px 2px;
 }
@@ -1729,7 +1729,7 @@ tfoot a:hover{
 .categories h2{
     color: #B73E26;
     float: left;
-    font-family: 'Rokkitt';
+    font-family: "Times New Roman", Times, serif;
     font-size: 22px;
     margin: 25px 0 0;
     text-shadow: none !important;
@@ -1754,7 +1754,7 @@ portfolio-h2 a:hover{color:#464646;}
 .portfolio-h2 p{
         color: #464646;
     float: left;
-    font-family: 'Droid Sans';
+    font-family: "Times New Roman", Times, serif;
     font-size: 12px;
     line-height: 20px;
     margin: 12px 0 0;
@@ -1764,7 +1764,7 @@ portfolio-h2 a:hover{color:#464646;}
 .portfolio-h2 a, .portfolio-h2{
     color: #B73E26;
     float: left;
-    font-family: 'Rokkitt';
+    font-family: "Times New Roman", Times, serif;
     font-size: 16px;
     margin: 10px 0 0;
     text-transform: uppercase;
@@ -1776,7 +1776,7 @@ portfolio-h2 a:hover{color:#464646;}
 .testemonial-title{
     color: #B73E26;
     float: left;
-    font-family: 'Rokkitt';
+    font-family: "Times New Roman", Times, serif;
     font-size: 16px;
     width: 100%;
 }
@@ -1784,7 +1784,7 @@ portfolio-h2 a:hover{color:#464646;}
 .testemonial-from{
     color: #434243;
     float: left;
-    font-family: 'Rokkitt';
+    font-family: "Times New Roman", Times, serif;
     font-size: 12px;
     width: 100%;
 }
