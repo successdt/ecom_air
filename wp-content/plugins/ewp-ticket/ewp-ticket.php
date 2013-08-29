@@ -15,16 +15,17 @@ require_once('ewp-ticket_admin.php');
  */
 
 global $ewp_db_version;
-$ewp_db_version = '1.0.0';
+$ewp_db_version = '1.0.1';
 
 function ewp_install() {
     global $wpdb;
     global $ewp_db_version;
     
     $table_name = $wpdb->prefix . "book_ticket";
+    $contact_table = $wpdb->prefix . "ewp_contact";
     
     $sql = "CREATE TABLE $table_name (
-    	id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    		id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
         	name VARCHAR(100),
         	email VARCHAR(100),
         	phone VARCHAR(25),
@@ -37,11 +38,16 @@ function ewp_install() {
         	infant_count INT(2),
             booking_date DATE,
             status VARCHAR(50)
-        );";
+        );
+		CREATE TABLE $contact_table (
+    		id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+        	email VARCHAR(100)
+        );
+		";
     require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
     dbDelta( $sql );
-    
     add_option("ewp_db_version", $ewp_db_version);
+    update_option("ewp_db_version", $ewp_db_version);
 }
 register_activation_hook( __FILE__, 'ewp_install' );
 
@@ -230,7 +236,7 @@ function show_hotline($atts){
 					Đăng ký nhận bản tin khuyến mãi
 				</div>
 				<div class="form">
-					<input name="email" class="email" />
+					<input name="receive-email" class="receive-email" />
 					<button class="btn-blue">Đăng ký</button>
 				</div>
 			</div>
@@ -439,10 +445,9 @@ function prepare_airport(){
  * save info to db and send mail
  * @author duythanhdao@live.com
  */
-
 function book_ticket(){
     $to = get_settings('admin_email');
-    $subject = 'Đặt vé của ' . $_POST['name'] . '<' . $_POST['email'] . '>';
+    $subject = 'Đặt vé của ' . $_POST['name'] . ($_POST['email'] ? '<' . $_POST['email'] . '>' : '') ;
     $message .= 'Tên khách hàng: ' . $_POST['name'] . "\n";
     $message .= 'Điện thoại: ' . $_POST['phone'] . "\n";
     $message .= 'Email: ' . $_POST['email'] . "\n";
@@ -455,13 +460,13 @@ function book_ticket(){
     $message .= 'Người lớn:' . $_POST['adult_count'] . " người \n";
     $message .= 'Trẻ em: ' . $_POST['kid_count'] . " người \n";
     $message .= 'Em bé: ' . $_POST['infant_count'] . " người \n";
+    reg_email();
     try{
         $result = wp_mail($to,$subject,$message);
     }
     catch(phpmailerException $e){
         
         $exceptionmsg = $e->errorMessage();
-
         exit('Có lỗi xảy ra, quý khách vui lòng thử lại');
     }
     if(saveBooking()) {
@@ -496,16 +501,46 @@ function saveBooking(){
     if(isset($_POST['comeback_date']) && isset($_POST['comeback_month']) && $_POST['comeback_date'] && $_POST['comeback_month']) {
          $comebackDate = $_POST['comeback_date'] . '/' . $_POST['comeback_month'];
          $data[] = "'" . date('Y-m-d', strtotime($comebackDate)) . "'";
+    } else {
+    	$data[] = "''";
     }
     $data[] = "'" . date('Y-m-d', time()) . "'";
     $data[] = "'" . 'waitting' . "'";
     
     $query = "INSERT INTO $table_name (name, email, phone, from_city, to_city, adult_count, kid_count, infant_count, go_date, comeback_date, booking_date, status) VALUES ";
-    $query .= "(" . implode(',', $data) . ")";    
+    $query .= "(" . implode(',', $data) . ")";
+  
     return $wpdb->query($query);
 }
 
+function reg_email(){
+	if(isset($_POST['email'])){
+		saveContact($_POST['email']);
+	}	
+}
 
+add_action( 'wp_ajax_reg_email', 'reg_email');
+add_action( 'wp_ajax_nopriv_reg_email', 'reg_email');
+
+/**
+ * save contact to database
+ * @author duythanhdao@live.com
+ */
+
+function saveContact($email = null){
+    global $wpdb;
+    $table_name = $wpdb->prefix . "ewp_contact";
+    
+  		$query = "DELETE FROM $table_name WHERE email LIKE '$email'";
+  		$wpdb->query($query);
+	    $query = "INSERT INTO $table_name (email) VALUES ";
+	    $query .= "('" . $email . "')";  
+	if($email) {
+		if($wpdb->query($query))
+			exit("Thông tin đã được lưu lại, xin cảm ơn!");
+		exit("Có lỗi xảy ra, vui lòng thử lại!");  	
+    }
+}
 
 /*********Amin area*******/
 

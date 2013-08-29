@@ -72,9 +72,42 @@ $(document).ready(function(){
 		}
 	});
 	
+	$('#info-reg button').click(function(){
+		var email = $('.receive-email').val();
+		if(isEmail(email)){
+			if(!sending){
+				var url = $('input#ajax-url').val();
+				sending = 1;
+	            $('#info-reg button').html('Đang gửi');
+	
+				$.ajax({
+					type: 'POST',
+					url: url,
+					data: {
+						action: 'reg_email',
+						email:  $('input[name*="receive-email"]').val(),			
+					},
+					complete: function(data, textStatus, XMLHttpRequest){
+						sending = 0;
+	                    alert(data.responseText.replace('\r\n', ''));
+	                    $('#info-reg button').html('Đặt vé');
+					}	
+				});					
+			}
+		
+		} else {
+			alert('Email không đúng, vui lòng nhập lại!');
+		}
+	});
+	
 	$('#show-form').fancybox({
 	});
 });
+
+function isEmail(email) {
+  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  return regex.test(email);
+}
 
 function checkValidate(){
     var goDate = $('select[name*="start-date"]').val();
