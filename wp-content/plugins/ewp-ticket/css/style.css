@@ -91,21 +91,7 @@
 	background-image: -o-linear-gradient(top, #ffaf46, #e78404);
 	background-image: linear-gradient(to bottom, #ffaf46, #e78404);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ffaf46, endColorstr=#e78404);
 }
-#info-reg button {
- 	background: #FFF;
- 	border-radius: 0px 27px 27px 0px;
- 	color: #CF7426;
- 	text-shadow: none;
- 	cursor: pointer;
- 	font-size: 20px;
- 	padding: 8px 25px 12px;
- 	border: 2px solid #EAEAEA;
- 	margin-left: -4px;
- 	margin-top: 1px;
-}
-#info-reg button:hover {
-	color: #414141;
-}
+
 .ticket-submit button {
 	padding: 10px;
 	font-size: 24px;
@@ -177,11 +163,14 @@
 	color: #000;
 	font-size: 16px;
 }
+#info-form table {
+	margin: 10px;
+}
 #info-form table .required {
 	color: #F00;
 }
 #info-form input {
-    min-width: 200px;
+    min-width: 356px;
     margin-top: 10px;
     border-top: 1px solid #b2b2b2;
 	border-left: 1px solid #b2b2b2;
@@ -190,6 +179,7 @@
 	padding: 8px 6px;
 	border-radius: 5px;
 }
+
 .home-banner {
 	width: 470px;
 	float: left;
@@ -229,18 +219,35 @@
 }
 #info-reg .form {
 	margin-top: 0px;
+	display: table-row;
 }
 #info-reg input {
-	width: 225px;
-	height: 45px;
+	width: 220px;
 	border-radius: 25px 0 0 25px;
 	border: none;
-	font-size: 13px;
+	font-size: 20px;
 	border: 2px solid #EAEAEA;	
 	border-right: none;
-	padding-left: 25px;
+	display: table-cell;
+	height: 47px;
+	float: left;
 }
-
+#info-reg button {
+ 	background: #FFF;
+ 	border-radius: 0px 27px 27px 0px;
+ 	color: #CF7426;
+ 	text-shadow: none;
+ 	cursor: pointer;
+ 	font-size: 20px;
+ 	border: 2px solid #EAEAEA;
+ 	display: table-cell;
+ 	float: left;
+ 	height: 51px;
+ 	
+}
+#info-reg button:hover {
+	color: #414141;
+}
 #info-reg input:focus {
 	outline: none;
 }
@@ -345,7 +352,7 @@
 	height: 50px;
 }
 .home-address .text {
-	width: 172px;
+	width: 185px;
 	margin: 0px 5px;
 }
 

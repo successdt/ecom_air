@@ -99,9 +99,11 @@ function checkValidate(){
         alert('Bạn cần điền số điện thoại');
         return 0;
     }
+    /*
     if(!email) {
         alert('Bạn cần điền địa chỉ email');
         return 0;
     }
+    */
     return 1;
 }
