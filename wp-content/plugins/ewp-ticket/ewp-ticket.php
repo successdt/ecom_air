@@ -239,14 +239,18 @@ function show_hotline($atts){
 					<img src="' . get_bloginfo('url') . '/wp-content/uploads/2013/08/hotline1.png" />
 				</div>
 				<div class="col">
+					<img alt="01288888618" src="' . get_bloginfo('url') . '/wp-content/uploads/2013/08/hotline_no.png" />
 			';
+	/*
 	if($hotline1){
 		$str .= '<span class="hotline-number">' . $hotline1 . '</span>';
 	}
 	if($hotline2){
 		$str .= '<span class="hotline-number">' . $hotline2 . '</span>';
 	}
+	*/
 	$str .= '
+	
 				</div>
 			</div>
 		</div>';

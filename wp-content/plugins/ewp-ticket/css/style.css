@@ -256,7 +256,11 @@
 	color: #F14902;
 	margin-top: 15px;
 	font-weight: bold;
-
+	text-shadow:     
+		-1px -1px 0 #ffffff,  
+	    1px -1px 0 #ffffff,
+	    -1px 1px 0 #ffffff,
+	    1px 1px 0 #ffffff;
 }
 .home-cell {
 	width: 468px;
@@ -281,9 +285,13 @@
 
 }
 .home-cell h5 {
-	margin: 10px;
-
+	background: url('../images/hot_news.png') no-repeat;
+	padding: 10px 40px 5px;
 	font-size: 24px;
+}
+.booking-hint h5 {
+	background: url('../images/star.png') no-repeat;
+	padding: 10px 40px 5px;
 }
 .booking-hint .text {
 	margin: 0 10px;
