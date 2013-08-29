@@ -235,18 +235,20 @@ if ( ! isset( $content_width ) ) $content_width = 900;
                                                             ?>
                                                             <li>
                                                                 <div class="slide-holder" style="background:url(<?php echo get_template_directory_uri();?>/script/timthumb.php?src=<?php print $img;?>&w=1920&h=625&zc=1&q=100) no-repeat center center">
-                                                                    <div class="slide-content-holder">
-                        <div class="holder-title"  <?php if(empty($data['item_price'])) { echo 'style="width:395px;"';}?>>
-                            <h2><a href="<?php echo the_permalink();?>"><?php echo $title1 . $dots3 ?></a></h2>
-                        </div>
-                        <div class="holder-text" <?php if(empty($data['item_price'])) { echo 'style="width:395px;"';}?>><p><?php truncate_post(185);?></p></div>
-                        <?php if(!empty($data['item_price'])) { ?>
-                        <div class="holder-circle">
-                            <h1><?php  echo $data['item_price']; ?></h1>
-                        </div><!--holder-circle-->
-                        <?php }?>
-                    </div>
-                                                                    </div>
+                                                                	<?php /*
+																    <div class="slide-content-holder">
+																        <div class="holder-title"  <?php if(empty($data['item_price'])) { echo 'style="width:395px;"';}?>>
+																            <h2><a href="<?php echo the_permalink();?>"><?php echo $title1 . $dots3 ?></a></h2>
+																        </div>
+																        <div class="holder-text" <?php if(empty($data['item_price'])) { echo 'style="width:395px;"';}?>><p><?php truncate_post(185);?></p></div>
+																        <?php if(!empty($data['item_price'])) { ?>
+																        <div class="holder-circle">
+																            <h1><?php  echo $data['item_price']; ?></h1>
+																        </div><!--holder-circle-->
+																        <?php }?>
+																    </div>
+																    */ ?>
+                                                                </div>
                                                             </li>
                 <?php
             }

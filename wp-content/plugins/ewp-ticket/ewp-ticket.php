@@ -162,7 +162,8 @@ function show_ticket_selector(){
 				<a href="#info-form" id="show-form">Đặt vé</a>
 				<div style="display:none">
 					<div id="info-form">
-						<h6>Hoặc điền thông tin của bạn để chúng tôi có thể liên hệ:</h6>
+						<img src="' . get_bloginfo('url') . '/wp-content/uploads/2013/08/call_to_book.png" alt="hot-line"/>
+						<h6>Hãy điền thông tin của bạn để chúng tôi có thể liên hệ:</h6>
 						<table>
 							<tr>
 								<td>Tên của bạn <span class="required">*</span></td>
