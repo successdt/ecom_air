@@ -231,6 +231,7 @@
 	display: table-cell;
 	height: 47px;
 	float: left;
+	padding-left: 25px;
 }
 #info-reg button {
  	background: #FFF;
@@ -295,10 +296,12 @@
 	background: url('../images/hot_news.png') no-repeat;
 	padding: 10px 40px 5px;
 	font-size: 24px;
+	margin-top: 5px;
 }
 .booking-hint h5 {
 	background: url('../images/star.png') no-repeat;
 	padding: 10px 40px 5px;
+	margin-top: 5px;
 }
 .booking-hint .text {
 	margin: 0 10px;
