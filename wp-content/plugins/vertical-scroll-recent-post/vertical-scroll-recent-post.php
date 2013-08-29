@@ -349,7 +349,7 @@ function get_vsrp()
 		}
 		$vsrp_height1 = $dis_num_height."px";
 		$str = "
-		<div style=\"padding-top:8px;padding-bottom:8px;\">
+		<div style=\"padding-bottom:8px;\">
 			<div style=\"text-align:left;vertical-align:middle;text-decoration: none;overflow: hidden; position: relative; margin-left: 1px; height: $vsrp_height1;\" id=\"vsrp_Holder\">
 				$vsrp_html
 			</div>
