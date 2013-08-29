@@ -299,7 +299,7 @@ function facebook_page($atts){
 	), $atts));
 	$str .= '<div class="facebook-page home-cell">';
 	if($url){
-		$str .= '<iframe src="' . $url . '" scrolling="no" frameborder="0" style="border: none; overflow: hidden; width: 450px; height: 275px;" allowtransparency="true"></iframe>';	
+		$str .= '<iframe src="' . $url . '" scrolling="no" frameborder="0" style="border: none; overflow: hidden; width: 468px; height: 275px;" allowtransparency="true"></iframe>';	
 	}
 	$str .= '</div>';
 	return $str;

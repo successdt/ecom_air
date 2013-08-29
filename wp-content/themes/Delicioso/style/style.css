@@ -1845,6 +1845,8 @@ span.break {
 }
 #vsrp_Holder {
 	margin: 20px !important;
+	border-top: 1px solid #DBDAD5;
+	border-bottom:  1px solid #DBDAD5;
 }
 #vsrp_Holder a {
 	color: #FFF;
