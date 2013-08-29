@@ -170,7 +170,7 @@ function show_ticket_selector(){
 								<td><input name="name" /></td>
 							</tr>
 							<tr>
-								<td>Địa chỉ email <span class="required">*</span></td>
+								<td>Địa chỉ email </td>
 								<td><input name="email" /></td>
 							</tr>
 							<tr>
