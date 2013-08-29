@@ -1845,6 +1845,8 @@ span.break {
 }
 #vsrp_Holder {
 	margin: 20px !important;
+	border-top: 1px solid #DBDAD5;
+	border-bottom:  1px solid #DBDAD5;
 }
 #vsrp_Holder a {
 	color: #FFF;
@@ -1876,4 +1878,52 @@ div.anythingSlider .anythingControls ul{
 div.anythingControls ul.thumbNav li.anythingControls-right {
 	background: url("../images/border-nav-center.png") repeat-x !important;
 	width: 30px !important;
+}
+.menu-top-menu-container {
+	margin-top: -30px;
+}
+.menu-item a{
+	padding-top: 29px !important;
+	padding-bottom: 31px !important;
+	
+}
+.menu-item + .menu-item {
+	border-left: 1px solid #FFF !important;	
+}
+ul.sub-menu a {
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+	
+}
+ul.sub-menu .menu-item {
+	border-left: none !important;
+}
+.sf-menu ul {
+	top: 77px !important;
+	left: -1px !important;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 1px solid #FFF !important;
+	border-top: none !important;
+}
+.top-border {
+	margin-top: -1px;
+}
+.menu-item a:hover /* , li.current_page_item a */{
+	background-color: #2D70CA;
+	color: #FFF !important;
+}
+.header {
+	height: 76px;
+}
+.sf-menu li li {
+	padding: 5px 26px 5px 0 !important;
+	background: transparent !important;
+	border: none;
+}
+.sf-shadow ul {
+    padding: 0 26px 0 0 !important;
+    
+}
+.sf-shadow ul a:hover {
+	color: #FFF !important;
 }

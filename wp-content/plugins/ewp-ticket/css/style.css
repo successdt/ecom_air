@@ -91,12 +91,28 @@
 	background-image: -o-linear-gradient(top, #ffaf46, #e78404);
 	background-image: linear-gradient(to bottom, #ffaf46, #e78404);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ffaf46, endColorstr=#e78404);
 }
+#info-reg button {
+ 	background: #FFF;
+ 	border-radius: 0px 27px 27px 0px;
+ 	color: #CF7426;
+ 	text-shadow: none;
+ 	cursor: pointer;
+ 	font-size: 20px;
+ 	padding: 8px 25px 12px;
+ 	border: 2px solid #EAEAEA;
+ 	margin-left: -4px;
+ 	margin-top: 1px;
+}
+#info-reg button:hover {
+	color: #414141;
+}
 .ticket-submit button {
 	padding: 10px;
 	font-size: 24px;
 	cursor: pointer;
 	float: left;
 	text-shadow: none ;
+	margin-top: 10px;
 }
 .ticket-submit a {
 	float: right;
@@ -194,58 +210,65 @@
 	width: 960px;
 	float: left;
 	margin-top: 20px;
-	background: #104282 url(../images/search1408.jpg) repeat-x top !important;
-	border-radius: 8px;
+	background: url('../images/bg-featured-box.jpg');
+	border: 1px solid #DBDAD5;
 }
 .info-hotline {
-	margin-top: 80px;
+	margin-top: 86px;
 }
 #info-reg {
-	width: 320px;
+	width: 400px;
 	float: left;
-	margin: 20px;
+	margin: 10px 20px;
 }
 #info-reg .title {
-	color: #FFF;
+	color: #F14902;
 	font-weight: bold;
-	font-size: 16px;
+	font-size: 24px;
+	margin-bottom: 10px;
 }
 #info-reg .form {
-	margin-top: 10px;
+	margin-top: 0px;
 }
 #info-reg input {
 	width: 225px;
-	height: 38px;
-	border-radius: 5px 0 0 5px;
+	height: 45px;
+	border-radius: 25px 0 0 25px;
 	border: none;
 	font-size: 13px;
+	border: 2px solid #EAEAEA;	
+	border-right: none;
+	padding-left: 25px;
 }
 
+#info-reg input:focus {
+	outline: none;
+}
 .hotline .col {
-	width: 250px;
+	width: 215px;
 	float: left;
-	margin: 20px;
+	margin: 3px 20px;
 	text-align: center;
 }
 .hotline-number {
 	display: block;
 	font-size: 28px;
-	color: #FFF;
+	color: #F14902;
 	margin-top: 15px;
 	font-weight: bold;
 
 }
 .home-cell {
-	width: 450px;
+	width: 468px;
 	height: 300px;
 	float: left;
 	margin-top: 20px;
 	background: #104282;
-	color: #FFF;
+
 	border: 10px solid #FFF;
 }
 .home-cell p {
-	color: #FFF;
+
 	margin: 20px;
 }
 .promo-news, .facebook-page {
@@ -255,11 +278,11 @@
 	height: 272px;
 }
 .facebook-page {
-	background-color: #FFF;
+
 }
 .home-cell h5 {
 	margin: 10px;
-	color: #FFF;
+
 	font-size: 24px;
 }
 .booking-hint .text {
@@ -314,13 +337,10 @@
 	height: 50px;
 }
 .home-address .text {
-	width: 168px;
+	width: 172px;
 	margin: 0px 5px;
-	color: #FFF;
 }
-.home-address strong {
-	color: #FFF;
-}
+
 .anythingControls {
 }
 .ticket-popup .header {
@@ -329,4 +349,12 @@
 }
 .popup-content {
 	margin: 10px;
+}
+.home-block, .home-cell {
+	background: url('../images/bg-featured-box.jpg');
+	border: 1px solid #DBDAD5;
+	color: #414141 !important;
+}
+.home-cell a {
+	color: #414141 !important;
 }
