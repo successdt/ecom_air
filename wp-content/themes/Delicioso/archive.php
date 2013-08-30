@@ -65,11 +65,12 @@ get_header(); ?>
                         <a href="<?php print $post_img;?>" class="pirobox " title="<?php the_title(); ?>" rel="single"><img src="<?php echo get_template_directory_uri();?>/script/timthumb.php?src=<?php print $post_img;?>&w=680&h=203&zc=1&q=100" alt="_" title="<?php the_title();?>" /></a>
                         <div class="blog-meta-border"></div>
                         <div class="post">
+                        	<?php /*
                             <div class="blog-written">
                                 <div class="icon-written"></div>
                                 <div class="written-content"><a href="<?php echo get_site_url().'/author/'.$written;  ?>"><?php echo $written; ?></a></div>
                             </div>
-
+							*/ ?>
                             <div class="blog-date">
                                 <div class="icon-date"></div>
                                 <div class="date-content"><?php the_time('F');?> <?php the_time('d');?>, <?php the_time('Y');?></div>
@@ -77,13 +78,14 @@ get_header(); ?>
 
                             <div class="blog-cat">
                                 <div class="icon-cat"></div>
-                                <div class="cat-content"><a href="<?php echo get_site_url().'/category/'.$post_category; ?>"><?php echo $post_category; ?></a></div>
+                                <div class="cat-content"><a href="<?php echo  esc_url(get_category_link( $post_category_id )); ?>"><?php echo $post_category; ?></a></div>
                             </div>
-
+							<?php /*
                             <div class="blog-comm">
                                 <div class="icon-comm"></div>
                                 <div class="comm-content"><a href="<?php the_permalink(); ?>"><?php if ($num_of_comments == 0){echo 'No Comments yet';}else {echo $num_of_comments;} ?></a></div>
                             </div>
+                            */ ?>                            
                         </div><!--/post-->
                     </div><!--/images-->
                     <div class="text">
