@@ -1848,8 +1848,23 @@ span.break {
 	border-top: 1px solid #DBDAD5;
 	border-bottom:  1px solid #DBDAD5;
 }
+.sidebar_widget_holder #vsrp_Holder {
+	margin: 0 !important;
+}
+
 #vsrp_Holder a {
 	color: #FFF;
+}
+.sidebar_widget_holder #vsrp_Holder a {
+	color: #000;
+}
+.sidebar_widget_holder #vsrp_Holder a:hover {
+	color: #B73E26;
+}
+.sidebar_widget_holder #vsrp_Holder .vsrp_div {
+	width: 200px;
+	margin-left: 5px;
+	border-bottom: 1px solid #DBDAD5;
 }
 .vsrp_div {
 
@@ -1865,6 +1880,10 @@ span.break {
 	width: 85%;
 	float: left;
 	
+}
+.sidebar_widget_holder .vsrp_div .title {
+	width: 80%;
+	margin-left: 5px;
 }
 .vsrp_div img {
 	margin-top: 5px;
@@ -1932,4 +1951,31 @@ ul.sub-menu .menu-item {
 }
 .logo img{
 	max-height: 75px;
+}
+.sidebar_widgettitle {
+	background: #98CE68;
+	color: #FFF;
+	padding: 10px 5px;
+	text-align: center;
+	margin: 0 auto;
+	width: 200px;
+	border-radius: 3px 3px 0 0;
+}
+.sidebar_widget_holder {
+	border-radius: 3px;
+	background: #FFF;
+	overflow: hidden;
+}
+.sidebar_widget_holder > div {
+	
+}
+.wp-statistics ul{
+	padding: 5px;
+	font-size: 14px;
+}
+.yahoo_skype_status-4 {
+	text-align: center;
+}
+.yahoo_skype_status-4 a {
+	padding: 5px;
 }
