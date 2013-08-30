@@ -21,29 +21,31 @@ get_header();
 
                 <?php
 	$data = get_post_meta( $post->ID, GD_THEME, true );
-if(isset($data)){
-			$data = get_post_meta( $post->ID, GD_THEME, true );
-                    }
-			if(!empty($data['page_headline'])){
-				$headline = $data['page_headline'];}
-				if(!empty($data['page_headline_link'])){
-					$headline_link = $data['page_headline_link'];
-				}
-			if(!empty($headline)){ ?>
-                <div class="menu-tape">
-                    <div class="menu-tape-left"></div>
-                    <div class="menu-tape-center">
-                            <?php if(isset($headline_link)){ ?>
-						<a href="<?php echo $headline_link;?>" class="learn_more">
-						<?php } ?>
-						<?php echo string_limit_words($headline, 26)?>
-						<?php if(isset($headline_link)){?>
-						</a>
-						<?php } ?></div>
-                    <div class="menu-tape-right"></div>
-                </div><!--menu-tape-->
+	if(isset($data)){
+		$data = get_post_meta( $post->ID, GD_THEME, true );
+    }
+	if(!empty($data['page_headline'])){
+		$headline = $data['page_headline'];
+	}
+	if(!empty($data['page_headline_link'])){
+		$headline_link = $data['page_headline_link'];
+	}
+	if(!empty($headline)){ ?>
+        <div class="menu-tape">
+            <div class="menu-tape-left"></div>
+            <div class="menu-tape-center">
+                <?php if(isset($headline_link)){ ?>
+				<a href="<?php echo $headline_link;?>" class="learn_more">
+				<?php } ?>
+				<?php echo string_limit_words($headline, 26)?>
+				<?php if(isset($headline_link)){?>
+					</a>
+				<?php } ?>
+			</div>
+            <div class="menu-tape-right"></div>
+        </div><!--menu-tape-->
 			<?php } ?>
-            <div class="content-left">
+        <div class="content-left">
 
 
 		<?php
