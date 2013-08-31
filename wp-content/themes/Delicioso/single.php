@@ -1,10 +1,15 @@
 <?php get_header();
     $oldblog = get_option('title_blog_page');
-    
+    $post_categories = wp_get_post_categories( $post->ID );
+	$cats = array();
+	foreach($post_categories as $c){
+		$cat = get_category( $c );
+		$cats[] = array( 'name' => $cat->name, 'slug' => $cat->slug );
+	}
 ?>
 <div class="top-content-title">
         <div class="wrap">
-            <h2><?php echo $oldblog?></h2>
+            <h2><?php echo $cats[0]['name']; // $oldblog?></h2>
             <div class="tk-search">
                 <div class="search-left"></div>
                 <div class="search-center"><?php get_search_form();?></div>
@@ -127,11 +132,12 @@
 
                       <div class="blog-meta-border no-img-border"></div>
                         <div class="post no-img-bg">
+                        	<?php /*
                             <div class="blog-written">
                                 <div class="icon-written"></div>
                                 <div class="written-content"><a href="<?php echo get_site_url().'/author/'.$written;  ?>"><?php echo $written; ?></a></div>
                             </div>
-
+							*/ ?>
                             <div class="blog-date">
                                 <div class="icon-date"></div>
                                 <div class="date-content"><?php the_time('F');?> <?php the_time('d');?>, <?php the_time('Y');?></div>
@@ -141,11 +147,12 @@
                                 <div class="icon-cat"></div>
                                 <div class="cat-content"><a href="<?php echo get_site_url().'/category/'.$post_category; ?>"><?php echo $post_category; ?></a></div>
                             </div>
-
+							<?php /*
                             <div class="blog-comm">
                                 <div class="icon-comm"></div>
                                 <div class="comm-content"><a href="<?php the_permalink(); ?>"><?php if ($num_of_comments == 0){echo 'No Comments yet';}else {echo $num_of_comments;} ?></a></div>
                             </div>
+                            */ ?>
                         </div><!--/post-->
                     <div class="text">
                         <p><?php the_content();?></p>
