@@ -6,12 +6,13 @@ get_header(); ?>
 
 <div class="top-content-title">
         <div class="wrap">
-        	<?php 
+        	<?php
+				var_dump(get_the_category()); 
 				foreach((get_the_category()) as $category) { 
 					$post_category = $category->cat_name;
 				}
 		 	?>
-            <h2><?php echo htmlentities($post_category); ?></h2>
+            <h2><?php echo $post_category; ?></h2>
             <div class="tk-search">
                 <div class="search-left"></div>
                 <div class="search-center"><?php get_search_form();?></div>
@@ -112,11 +113,12 @@ get_header(); ?>
 
                         <div class="blog-meta-border no-img-border"></div>
                         <div class="post no-img-bg">
+                        	<?php /*
                             <div class="blog-written">
                                 <div class="icon-written"></div>
                                 <div class="written-content"><a href="<?php echo get_site_url().'/author/'.$written;  ?>"><?php echo $written; ?></a></div>
                             </div>
-
+							*/ ?>
                             <div class="blog-date">
                                 <div class="icon-date"></div>
                                 <div class="date-content"><?php the_time('F');?> <?php the_time('d');?>, <?php the_time('Y');?></div>
@@ -126,11 +128,12 @@ get_header(); ?>
                                 <div class="icon-cat"></div>
                                 <div class="cat-content"><a href="<?php echo get_site_url().'/category/'.$post_category; ?>"><?php echo $post_category; ?></a></div>
                             </div>
-
+							<?php /*
                             <div class="blog-comm">
                                 <div class="icon-comm"></div>
                                 <div class="comm-content"><a href="<?php the_permalink(); ?>"><?php if ($num_of_comments == 0){echo 'No Comments yet';}else {echo $num_of_comments;} ?></a></div>
                             </div>
+                            */ ?>
                         </div><!--/post-->
                     <div class="text">
                         <p><?php truncate_post(400);?></p>
