@@ -7,12 +7,9 @@ get_header(); ?>
 <div class="top-content-title">
         <div class="wrap">
         	<?php
-				var_dump(get_the_category()); 
-				foreach((get_the_category()) as $category) { 
-					$post_category = $category->cat_name;
-				}
+				$categories = get_the_category();
 		 	?>
-            <h2><?php echo $post_category; ?></h2>
+            <h2><?php echo $categories[0]->cat_name; ?></h2>
             <div class="tk-search">
                 <div class="search-left"></div>
                 <div class="search-center"><?php get_search_form();?></div>
