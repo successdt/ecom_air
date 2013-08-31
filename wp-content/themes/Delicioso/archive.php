@@ -6,7 +6,12 @@ get_header(); ?>
 
 <div class="top-content-title">
         <div class="wrap">
-            <h2>Archives</h2>
+        	<?php 
+				foreach((get_the_category()) as $category) { 
+					$post_category = $category->cat_name;
+				}
+		 	?>
+            <h2><?php echo htmlentities($post_category); ?></h2>
             <div class="tk-search">
                 <div class="search-left"></div>
                 <div class="search-center"><?php get_search_form();?></div>
@@ -47,7 +52,7 @@ get_header(); ?>
 													$post_category = $category->cat_name;
 													$post_category_id = $category->cat_ID;
 													$cat_slug=get_cat_slug($post_category_id);
-													} 
+												} 
 												
 												foreach($comments as $comm) :
 													$num_of_comments++;
