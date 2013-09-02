@@ -1985,3 +1985,16 @@ p {
 .content-one .text {
 	font-size: 14px;
 }
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
