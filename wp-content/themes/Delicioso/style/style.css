@@ -1982,3 +1982,6 @@ ul.sub-menu .menu-item {
 p {
 	display: block;
 }
+.content-one .text {
+	font-size: 14px;
+}
