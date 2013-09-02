@@ -87,7 +87,7 @@
 								?>
 								<?php if($post_img !== "") { ?>
                 <div class="content-one">
-                    <div class="title-blog"><a href="<?php the_permalink(); ?>"><?php echo substr($title,0,60).$dots; ?></a></div><!--/title-blog-->
+                    <div class="title-blog"><a href="<?php the_permalink(); ?>"><?php echo $title // substr($title,0,60).$dots; ?></a></div><!--/title-blog-->
                            <div class="images">
                         <a href="<?php print $post_img;?>" class="pirobox " title="<?php the_title(); ?>" rel="single"><img src="<?php echo get_template_directory_uri();?>/script/timthumb.php?src=<?php print $post_img;?>&w=680&h=203&zc=1&q=100" alt="_" title="<?php the_title();?>" /></a>
                         <div class="blog-meta-border"></div>

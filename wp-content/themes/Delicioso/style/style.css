@@ -1979,3 +1979,6 @@ ul.sub-menu .menu-item {
 .yahoo_skype_status-4 a {
 	padding: 5px;
 }
+p {
+	display: block;
+}
