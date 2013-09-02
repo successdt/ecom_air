@@ -223,7 +223,14 @@ function show_home_banner($atts){
 	}
 	return $str;
 }
-
+function show_home_ads($atts, $content = null){
+	$str = '
+		<div class="home-row">
+			' . $content . '
+		</div>
+	';
+	return $str;
+}
 function show_hotline($atts){
 	extract(shortcode_atts(array(
 		'hotline1' => '',
@@ -322,6 +329,7 @@ function register_shortcode(){
 	add_shortcode('promo-news', 'promo_news');
 	add_shortcode('home-address', 'home_address');
 	add_shortcode('facebook-page', 'facebook_page');
+	add_shortcode('home-ads', 'show_home_ads');
 }
 
 add_action('init', 'register_shortcode');
@@ -351,7 +359,7 @@ function prepare_ranger($start, $end){
 }
 function get_list_airport(){
 	$cities = array(
-		'vietnam' => array(
+		'Vietnam' => array(
 			'Hà Nội',
 			'Hải Phòng',
 			'Điện Biên',
@@ -373,16 +381,19 @@ function get_list_airport(){
 			'Rạch Giá',
 			'Cà Mau'
 		),
-		'australia' => array(
+		'US' => array(
+			'Los Angeles',
+			'New York'
+		),
+		'Taiwan' => array(
+			'Kaohsiung',
+			'Taipei'
+		),
+		'Australia' => array(
 			'Adelaide',
-			'Ayers Rock(Uluru)',
-			'Ballina Byron',
 			'Brisbane',
 			'Cairns',
 			'Darwin',
-			'Gold Coast',
-			'Hamitton island',
-			'Hayman island',
 			'Hobart',
 			'Launceston',
 			'Mackay',
@@ -390,16 +401,53 @@ function get_list_airport(){
 			'Newscastle',
 			'Perth',
 			'Sunshine Coast',
-			'Sydney',
-			'Townsville',
-			'Witsunday Coast'
-			
+			'Sydney'
 		),
-		'cambodia' => array(
+		'Thailand' => array(
+			'Bangkok'
+		),
+		'Sigapore' => array(
+			'Singapore'
+		),
+		'Russian' => array(
+			'Domodedovo'
+		),
+		'Indonesia' => array(
+			'Bali',
+			'Jakarta',
+			'Padang'
+		),
+		'Hong Kong' => array(
+			'Hong Kong'
+		),
+		'France' => array(
+			'Paris De Gaulle'
+		),
+		'Denmark' => array(
+			'Copenhagen'
+		),
+		'Qatar' => array(
+			'Doha'
+		),
+		'Canada' => array(
+			'Toronto',
+			'Vancouver',
+			'Winnipeg'
+		),
+		'Japan' => array(
+			'Fukuoka',
+			'Osaka',
+			'Tokyo'
+		),
+		'Korea' => array(
+			'Busan',
+			'Seoul'
+		),
+		'Cambodia' => array(
 			'Phnom Penh',
 			'Siem Reap'
 		),
-		'china' => array(
+		'China' => array(
 			'Beijing',
 			'Guangzhou',
 			'Haikou',

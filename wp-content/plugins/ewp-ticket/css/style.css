@@ -203,6 +203,11 @@
 	background: url('../images/bg-featured-box.jpg');
 	border: 1px solid #DBDAD5;
 }
+.home-row {
+	width: 960px;
+	margin-top: 20px;
+	float: left;
+}
 .info-hotline {
 	margin-top: 86px;
 }
@@ -284,7 +289,7 @@
 	margin: 20px;
 }
 .promo-news, .facebook-page {
-	margin-left: 20px;
+	margin-left: 19px;
 }
 .facebook-page, .home-address{
 	height: 272px;
