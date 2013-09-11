@@ -295,16 +295,17 @@ function home_address($atts, $content = null){
 	), $atts));
 	$str = 
 		'<div class="home-cell home-address">
+			<h5>Địa chỉ liên hệ</h5>
 		';	
 	if($content){
-		$str .= '<div class="text">' . $content . '</div>';
+//		$str .= '<div class="text">' . $content . '</div>';
 	}
 	if($latitude && $longitude){
 		$str .= '<input type="hidden" id="lat" value="' . $latitude . '">';
 		$str .= '<input type="hidden" id="lat" value="' . $longitude . '">';
 		$str .= 
 			'<div class="map">
-				<iframe width="272" height="272" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=vi&amp;geocode=&amp;q=21.0301444,105.7845998&amp;aq=&amp;sll=15.984434,108.273697&amp;sspn=0.215192,0.407181&amp;ie=UTF8&amp;t=m&amp;ll=21.030113,105.784607&amp;spn=0.021791,0.02326&amp;z=14&amp;output=embed"></iframe>
+				<iframe width="468" height="232" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=vi&amp;geocode=&amp;q=21.0301444,105.7845998&amp;aq=&amp;sll=15.984434,108.273697&amp;sspn=0.215192,0.407181&amp;ie=UTF8&amp;t=m&amp;ll=21.030113,105.784607&amp;spn=0.021791,0.02326&amp;z=14&amp;output=embed"></iframe>
 			</div>';
 	}
 	$str .= '</div>';
@@ -314,7 +315,9 @@ function facebook_page($atts){
 	extract(shortcode_atts(array(
 		'url' => ''
 	), $atts));
-	$str .= '<div class="facebook-page home-cell">';
+	$str .= '<div class="facebook-page home-cell">
+		<h5>Like để nhận tin vé rẻ</h5>
+	';
 	if($url){
 		$str .= '<iframe src="' . $url . '" scrolling="no" frameborder="0" style="border: none; overflow: hidden; width: 468px; height: 275px;" allowtransparency="true"></iframe>';	
 	}

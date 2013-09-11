@@ -1,52 +1,13 @@
-     <div class="twitter-holder">
-
-				<?php // Your twitter username.
-				$username = get_option(THEME_NAME.'_footer_twitter');
-
-				if(empty($username)) {$username="themesaholic";}
-
-				// Suffix - some text you want display after your latest tweet. (Same rules as the prefix.)
-				$suffix = "";
-
-				$feed = "http://search.twitter.com/search.atom?q=from:" . $username . "&rpp=1";
-				$curl_handle = curl_init($feed);
-					curl_setopt($curl_handle, CURLOPT_CONNECTTIMEOUT,10);
-					curl_setopt($curl_handle, CURLOPT_RETURNTRANSFER, 1);
-					$content = "";
-					$content = curl_exec($curl_handle);
-					curl_close($curl_handle);
-					$parsed = "";
-				if(isset($content)){
-				$result = new SimpleXMLElement($content);
-
-				$parsed = $result->entry->content;
-				}
-
-					if(!empty($parsed)){ ?>
-
-
-         <div class="footer_twitter">
-             <div class="twitter-dialog">
-						<table class="twitter_table">
-						<thead>
-						</thead>
-						<tbody>
-							<tr><td style="width:40px;vertical-align:top;padding:0 0 0 28px;">
-                                                                <a href="http://twitter.com/<?php echo get_option('footer_twitter');?>" class="twitter-link" title="Follow me on Twitter">
-                                                                    <span class="bird"></span>
-                                                                </a></td>
-									<td class="twitter-dialog-td-p">
-										<?php echo $parsed.stripslashes($suffix);;  ?>
-									</td>
-								</tr>
-
-
-						</tbody>
-						</table>
-						</div>
-					</div>
-					<?php } ?>
-		</div><!--twitter holder-->
+<div class="twitter-holder" align="center">
+	<div style="max-width: 960px; margin: 0 auto;">
+	     <?php
+	      if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('bottom-content') ) :
+	      endif;
+		  ?>	
+	
+	</div>
+ 
+</div><!--twitter holder-->
 
 <div class="footer-border-top"></div>
 
@@ -79,6 +40,14 @@
 						<?php endif; ?>
 					</div><!--close footer_box-->
 					<div class="clear-both"></div>
+					
+					<div style="max-width: 960px; margin: 0 auto; text-align: center;" class="big-footer">
+					     <?php
+					      if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('big-footer') ) :
+					      endif;
+						  ?>	
+					
+					</div>
 	</div><!--close footer box-->
 				</div><!--close wrap -->
 

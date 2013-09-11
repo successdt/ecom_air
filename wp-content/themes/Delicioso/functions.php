@@ -104,3 +104,26 @@ update_option('THEME_NAME',THEME_NAME);
 	
 	add_theme_support( 'post-thumbnails', array( 'post' ) );
 	add_theme_support( 'automatic-feed-links' );
+	
+	if ( function_exists('register_sidebar') ) {
+		register_sidebar(array(
+			'name' => 'Bottom Content',
+			'id' => 'bottom-content',
+			'description' => 'At the top of Footer',
+			'before_widget' => '',
+			'after_widget' => '',
+			'before_title' => '',
+			'after_title' => '',
+		));
+	}
+	if ( function_exists('register_sidebar') ) {
+		register_sidebar(array(
+			'name' => 'Big Footer',
+			'id' => 'big-footer',
+			'description' => 'full size widget',
+			'before_widget' => '',
+			'after_widget' => '',
+			'before_title' => '',
+			'after_title' => '',
+		));
+	}

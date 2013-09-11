@@ -298,13 +298,13 @@
 
 }
 .home-cell h5 {
-	background: url('../images/hot_news.png') no-repeat #98CE68;
+	background: url('../images/hot_news.png') no-repeat #1E94C8;
 	padding: 10px 40px 5px;
 	font-size: 24px;
 	color: #FFF;
 }
-.booking-hint h5 {
-	background: url('../images/star.png') no-repeat #6BCBCA;
+.booking-hint h5, .home-address h5 {
+	background: url('../images/star.png') no-repeat #1E94C8;
 	padding: 10px 40px 5px;
 }
 .booking-hint .text {
@@ -379,4 +379,26 @@
 }
 .home-cell a {
 	color: #414141 !important;
+}
+.twitter-holder .textwidget {
+	margin-top: 15px;
+	
+}
+.big-footer {
+	margin-top: -20px !important;
+}
+.big-footer > div {
+	width: 100%;
+}
+.facebook-page h5 {
+	position: relative;
+	z-index: 2;
+}
+.facebook-page iframe {
+	margin-top: -37px;
+	position: relative;
+		
+}
+.home-cell h5 {
+	text-transform: none;
 }
