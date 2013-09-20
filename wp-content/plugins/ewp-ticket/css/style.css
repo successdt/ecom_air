@@ -197,7 +197,7 @@
 }
 
 .home-block {
-	width: 960px;
+	width: 958px;
 	float: left;
 	margin-top: 20px;
 	background: url('../images/bg-featured-box.jpg');
@@ -401,4 +401,74 @@
 }
 .home-cell h5 {
 	text-transform: none;
+}
+.service-method {
+	width: 958px;
+	border: 1px solid #CCC;
+	background: #FFF;
+	float: left;
+	margin-top: 10px;
+}
+.payment-method {
+	padding: 10px;
+	width: 450px;
+	
+	margin: 10px 0;
+	float: left;
+}
+.service-method  h3 {
+	text-transform: none;	
+}
+.service-method .count {
+	font-size: 28px;
+	font-weight: lighter;
+	color: #737373;
+}
+.service-method .insideLi {
+	font-size: 14px;
+	color: #0b1e6f;
+	font-weight: bold;
+}
+.service-method ul > li {
+	margin-top: 10px;
+}
+.service {
+	padding: 10px;
+	width: 450px;
+	float: left;
+	margin: 10px 0;
+	border-left: 1px solid #CCC;	
+}
+.line7 {
+	border: 1px dotted #CCC;
+	margin-bottom: 10px;
+}
+.pull-left {
+	float: left;
+}
+
+.big-font-header {
+	font-weight: bold;
+	font-size: 24px;
+	margin-left: 10px;
+
+}
+.bold-font-cyan {
+	font-weight: bold;
+	font-size: 14px;
+}
+.service-method li  img {
+	margin-right: 20px;
+}
+.service .thumb {
+	width: 55px;
+	float: left;
+}
+
+.wPttt li p {
+	width: 355px;
+	float: left;
+}
+.wPttt li b {
+	text-transform: uppercase;
 }

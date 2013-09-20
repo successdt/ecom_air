@@ -324,6 +324,141 @@ function facebook_page($atts){
 	$str .= '</div>';
 	return $str;
 }
+function service_method(){
+	$str = '
+	<div class="service-method">
+	    <div class="payment-method">
+	        <h3 class="big-font-normal">
+	            Quý khách có thể<br/>
+	            <span class="big-font-header">mua vé máy bay bằng các hình thức</span></h3>
+	        <div class="blank10">
+	        </div>
+	        <div class="line7">
+	        </div>
+	        <ul>
+	            <li>
+	                <span class="count">1.</span>
+	                <span class="insideLi">Qua chat<br/>
+							<a href="ymsgr:sendim?leminhoffice" style="margin-left: 20px;">
+								<img src="http://opi.yahoo.com/online?u=leminhoffice&t=1" alt="leminhoffice" />
+							</a>
+							<a href="skype:leminhair.vn?call">
+								<img src="http://mystatus.skype.com/smallclassic/leminhair.vn" alt="leminhair.vn" />
+							</a> 
+	                </span>
+	            </li>
+	            <li>
+	                <span class="count">2.</span>
+					<span class="insideLi">Gọi
+	                    điện thoại cho LeminhAir<br>
+	                </span>
+	                <img src="/wp-content/uploads/2013/09/phone.png" class="pull-left" alt="" style="margin-left: 20px;" />
+	                <span class="bold-font-cyan" style="margin-top: 12px; display: block; float: left;">
+						<span style="color: #ee5a24;">012 88888 618 - 012 88888 619</span></span>
+	                <div class="clr">
+	                </div>
+	            </li>
+	            <li>
+	                <span class="count">3.</span>
+					<span class="insideLi"> Đến
+	                    trực tiếp phòng vé Lê Minh</span>
+	                <div class="blank10">
+	                </div>
+	                <div id="addVP">
+	                    <div class="blank10">
+	                    </div>
+	                   	<a href="https://maps.google.com/maps?q=ph%C3%B2ng+v%C3%A9+l%C3%AA+minh&hl=vi&ie=UTF8&ll=20.980915,105.795915&spn=0.013524,0.026157&sll=20.981636,105.79495&sspn=0.013524,0.026157&t=m&radius=1.01&hq=ph%C3%B2ng+v%C3%A9+l%C3%AA+minh&z=16&iwloc=A" title="Xem chi tiết bản đồ">
+						   <img src="' . plugins_url('images/map.png', __FILE__) .'" width="440" height="290" alt="" style="margin-left: 10px">
+						</a>
+	                </div>
+	                <span class="viewoffice" style="margin-left: 10px;">Click vào ảnh để xem bản đồ cỡ lớn</span>
+	                <div class="clr">
+	                </div>
+	            </li>
+	        </ul>
+	    </div>
+	    <!--End:Service -->
+	    <div class="service">
+	            <div class="Pttt">
+	            <h3 class="big-font-normal">
+	                &nbsp;<br/>
+	                <span class="big-font-header">Các hình thức thanh toán</span></h3>
+	                <div class="blank10">
+	                </div>
+	                <div class="line7">
+	                </div>
+	                <ul class="wPttt">
+	                    
+	                    <li>
+	                        <div class="imgPttt">
+	                        <img class="thumb" src="/wp-content/uploads/2013/09/logo1.png" alt="Thanh toán tại vp LeminhAir" title="Thanh toán tại văn phòng LeminhAir">
+	                        </div>
+	                        <p>
+	                            <b>Thanh toán bằng tiền mặt tại Phòng vé Lê Minh</b><br/>
+	                            <span>Sau khi đặt hàng thành công, Quý khách vui lòng qua phòng vé Lê Minh để thanh toán và nhận vé.</span>
+	                        </p>
+	                        <div class="clr"></div>
+	                    </li>
+	                    <li>
+	                        <div class="imgPttt">
+	                        <img class="thumb" src="/wp-content/uploads/2013/09/pos.jpg" alt="Thanh toán qua Ngân lượng và soha" title="Thanh toán qua Ngân Lượng và SOHApay">
+	                        </div>
+	                        <p>
+	                            <b>Thanh toán qua máy cà thẻ (POS)</b><br/>
+	                            <span>Quý khách có thể thanh toán bằng hình thức cà thẻ (POS) tại phòng vé Lê Minh.</span>
+	                        </p>
+	
+	
+	
+	                        <div class="clr"></div>
+	                    </li>
+	                    <li>
+	                        <div class="imgPttt">
+	                        <img class="thumb" src="/wp-content/uploads/2013/09/HouseIcon.png" alt="Thanh toán tại nhà" title="Thanh toán tại nhà"></div>
+	                        <p>
+	                            <b>Thanh toán tại nhà</b><br/>
+	                            <span>Nhân viên LeminhAir sẽ giao vé &amp; thu tiền tại nhà theo địa chỉ Quý khách cung cấp.</span>
+	                        </p>
+	                        <div class="clr"></div>
+	                    </li>
+	                    <li id="">
+	                        <div class="imgPttt">
+	                        <img class="thumb" src="/wp-content/uploads/2013/09/sohanganluong.jpg" alt="Thanh toán qua cổng thanh toán điện tử" title="Thanh toán qua cổng thanh toán điện tử">
+	                        </div>
+	                        <p>
+	                            <b>Thanh toán qua các cổng thanh toán điện tử</b><br>
+	                            <span>Quý khách có thể thanh toán ngay (trực tuyến) thông qua cổng Senpay, Ngân Lượng, SOHAPay.</span>
+	                        </p>
+	
+	
+	
+	                        <div class="clr"></div>
+	                    </li>
+	                    <li style="border-bottom: none !important;">
+	                        <div class="imgPttt">
+	                        <img class="thumb" src="/wp-content/uploads/2013/09/bank.jpg" alt="Thanh toán qua chuyển khoản"/>
+	                        </div>
+	                        <p>
+	                            <b>Thanh toán qua chuyển khoản</b><br>
+	                            <span>Quý khách có thể thanh toán cho chúng tôi bằng cách chuyển khoản trực tiếp tại ngân hàng, chuyển qua thẻ ATM, hoặc qua Internet banking.</span>
+	                        </p>
+	                        <div style="text-align: center;width: 100%;float: left">
+	                			<img src="' . plugins_url('images/banks.png', __FILE__) .'" alt="Argibank, Techcombank, Bidv, ACB,..." style="margin-top: 5px; margin-left:50px;" title="Các ngân hàng">
+	                        </div>
+	                        <div class="clr"></div>
+	                    </li>
+	                </ul>
+	                <div class="clr"></div>
+	            </div> <!--End:Pttt-->           	
+	    </div>
+	    <!--End:Service -->
+	    <div class="clr">
+	    </div>
+	</div>
+	
+	';
+	return $str;
+}
 function register_shortcode(){
 	add_shortcode('chon-ve', 'show_ticket_selector');
 	add_shortcode('home-banner', 'show_home_banner');
@@ -333,6 +468,7 @@ function register_shortcode(){
 	add_shortcode('home-address', 'home_address');
 	add_shortcode('facebook-page', 'facebook_page');
 	add_shortcode('home-ads', 'show_home_ads');
+	add_shortcode('service-method', 'service_method');
 }
 
 add_action('init', 'register_shortcode');
