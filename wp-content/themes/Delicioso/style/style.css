@@ -1999,3 +1999,13 @@ p {
 .alignright {
 	float: right;
 }
+
+
+/*thanh toan page */
+.page-content{
+background-color:white;
+  height:auto;
+  margin-top:-42px;
+  padding:10px;
+  width:692px;
+}
