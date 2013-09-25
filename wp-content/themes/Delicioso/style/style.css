@@ -2009,3 +2009,20 @@ background-color:white;
   padding:10px;
   width:692px;
 }
+
+.page-content table {
+  clear:both;
+  float:left;
+}
+
+.list-banks td {
+  border-top-color:#DCDCDC;
+  border-top-style:solid;
+  border-top-width:1px;
+  padding:5px;
+}
+
+.list-banks td img {
+  border:none;
+  vertical-align:middle;
+}
