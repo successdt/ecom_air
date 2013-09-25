@@ -429,7 +429,7 @@ function service_method(){
 	                            <span>Quý khách có thể thanh toán cho chúng tôi bằng cách chuyển khoản trực tiếp tại ngân hàng, chuyển qua thẻ ATM, hoặc qua Internet banking.</span>
 	                        </p>
 	                        <div style="text-align: center;width: 100%;float: left;">
-	                			<img style="width:460px;margin-left:10px;height:163px;" src="' . plugins_url('images/banks.png', __FILE__) .'" alt="Argibank, Techcombank, Bidv, ACB,..." style="margin-top: 5px; margin-left:50px;" title="Các ngân hàng">
+	                			<img style="width:460px;margin-left:16px;height:163px;" src="' . plugins_url('images/banks.png', __FILE__) .'" alt="Argibank, Techcombank, Bidv, ACB,..." style="margin-top: 5px; margin-left:50px;" title="Các ngân hàng">
 	                        </div>
 	                        <div class="clr"></div>
 	                    </li>
