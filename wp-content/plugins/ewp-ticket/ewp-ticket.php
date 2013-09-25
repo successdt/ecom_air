@@ -408,8 +408,6 @@ function service_method(){
 	                            <span>Quý khách có thể thanh toán bằng hình thức cà thẻ (POS) tại phòng vé Lê Minh.</span>
 	                        </p>
 	
-	
-	
 	                        <div class="clr"></div>
 	                    </li>
 	                    <li>
@@ -421,19 +419,7 @@ function service_method(){
 	                        </p>
 	                        <div class="clr"></div>
 	                    </li>
-	                    <li id="">
-	                        <div class="imgPttt">
-	                        <img class="thumb" src="/wp-content/uploads/2013/09/sohanganluong.jpg" alt="Thanh toán qua cổng thanh toán điện tử" title="Thanh toán qua cổng thanh toán điện tử">
-	                        </div>
-	                        <p>
-	                            <b>Thanh toán qua các cổng thanh toán điện tử</b><br>
-	                            <span>Quý khách có thể thanh toán ngay (trực tuyến) thông qua cổng Senpay, Ngân Lượng, SOHAPay.</span>
-	                        </p>
-	
-	
-	
-	                        <div class="clr"></div>
-	                    </li>
+	                   
 	                    <li style="border-bottom: none !important;">
 	                        <div class="imgPttt">
 	                        <img class="thumb" src="/wp-content/uploads/2013/09/bank.jpg" alt="Thanh toán qua chuyển khoản"/>
@@ -442,8 +428,8 @@ function service_method(){
 	                            <b>Thanh toán qua chuyển khoản</b><br>
 	                            <span>Quý khách có thể thanh toán cho chúng tôi bằng cách chuyển khoản trực tiếp tại ngân hàng, chuyển qua thẻ ATM, hoặc qua Internet banking.</span>
 	                        </p>
-	                        <div style="text-align: center;width: 100%;float: left">
-	                			<img src="' . plugins_url('images/banks.png', __FILE__) .'" alt="Argibank, Techcombank, Bidv, ACB,..." style="margin-top: 5px; margin-left:50px;" title="Các ngân hàng">
+	                        <div style="text-align: center;width: 100%;float: left;">
+	                			<img style="width:460px;margin-left:10px;height:163px;" src="' . plugins_url('images/banks.png', __FILE__) .'" alt="Argibank, Techcombank, Bidv, ACB,..." style="margin-top: 5px; margin-left:50px;" title="Các ngân hàng">
 	                        </div>
 	                        <div class="clr"></div>
 	                    </li>
