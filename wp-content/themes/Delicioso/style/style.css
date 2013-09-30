@@ -1879,14 +1879,18 @@ span.break {
 .vsrp_div .title {
 	width: 85%;
 	float: left;
+	font-size: 16px;
+	font-weight: bold;
 	
 }
 .sidebar_widget_holder .vsrp_div .title {
 	width: 80%;
 	margin-left: 5px;
+	font-size: 12px;
+	font-weight: normal;
 }
 .vsrp_div img {
-	margin-top: 5px;
+	margin-top: 3px;
 }
 .slide-holder {
 	overflow: hidden;

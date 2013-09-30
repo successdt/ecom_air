@@ -103,7 +103,7 @@ function show_ticket_selector(){
 					<div>Ngày đi</div>
 					<div>
 						<select name="start-date">
-							' . prepare_date() . '
+							' . prepare_date(1) . '
 						</select>
 						<select name="start-month">
 							' . prepare_month() . '
@@ -473,10 +473,16 @@ function register_shortcode(){
 
 add_action('init', 'register_shortcode');
 
-function prepare_date(){
+function prepare_date($checked = 0){
 	$str = '';
 	for($i = 1; $i < 32; $i++){
-		$str .= '<option value="' . $i . '">' . $i . '</option>';
+		$day = date('d', time());
+		if($day == $i && $checked) {
+			$str .= '<option value="' . $i . '" selected="selected">' . $i . '</option>';	
+		} else {
+			$str .= '<option value="' . $i . '">' . $i . '</option>';	
+		}
+		
 	}
 	return $str;
 }
